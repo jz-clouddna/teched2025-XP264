@@ -13,7 +13,7 @@ jobs:
       matrix:
         namespace: [xp264-001, xp264-002]
     steps:
-      - uses: ./.github/workflows/xp264-000-teched-622af3fe-a2f5-4fdd-a05f-73e343aec2a5-xp264.yml
+      - uses: SAP-samples/teched2025-XP264/.github/workflows/xp264-000-teched-622af3fe-a2f5-4fdd-a05f-73e343aec2a5-xp264.yml@main
         with:
           NAMESPACE: ${{ matrix.namespace }}
       #secrets: inherit
