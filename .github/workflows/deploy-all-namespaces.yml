@@ -16,4 +16,4 @@ jobs:
     - uses: ./.github/workflows/xp264-000-teched-622af3fe-a2f5-4fdd-a05f-73e343aec2a5-xp264.yml
       with:
         NAMESPACE: ${{ matrix.namespace }}
-      secrets: inherit
+      #secrets: inherit
