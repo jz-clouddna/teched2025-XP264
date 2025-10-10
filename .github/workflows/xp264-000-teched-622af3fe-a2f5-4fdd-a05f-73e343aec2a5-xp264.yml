@@ -122,5 +122,5 @@
         "required": true
         "type": "choice"
 "permissions":
+  "contents": "read"
   "id-token": "write"
-  contents: "read"
