@@ -106,7 +106,8 @@ env:
 
         export CONFIG_DIRECTORY=${{ env.CONFIG_DIRECTORY }}
         export BTP_USERNAME=${{ vars.BTP_USERNAME }}
-        export BTP_PASSWORD=${{ secrets.BTP_PASSWORD }}
+        #export BTP_PASSWORD=${{ secrets.BTP_PASSWORD }}
+        export BTP_ASSERTION=${{steps.get-github-jwt.outputs.githubJwt}}
 
         echo ${{ secrets.CICD_TOKEN_FOR_TF_MODULES }} | base64
 
