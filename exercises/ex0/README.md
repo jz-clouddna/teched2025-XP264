@@ -113,8 +113,8 @@ Easy navigation with the session landscape site:
 
 
 <p float="left">
-  <img src="../ex0/images/site_navigation.png" width="400" />
-  <img src="../ex0/images/functional_architecture.png" width="400" /> 
+  <img src="../ex0/images/site_navigation.png" width="400" height="600"/>
+  <img src="../ex0/images/functional_architecture.png" width="400" height="600"/> 
 </p>
 
 Functional architecture
