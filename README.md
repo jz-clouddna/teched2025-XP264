@@ -33,12 +33,13 @@ The requirements to follow the exercises in this repository are...
 * #### [Exercise 0 - Preparation Steps](exercises/ex0#exercice-0---preparation-steps)
 
   * [Exercise 0.0 - (Optional) Create a GitHub account](exercises/ex0#exercise-00---optional-create-a-github-account)
-  * [Exercise 0.1 - Create a Copy of This Repository](exercises/ex0#exercicse-01---create-a-copy-of-this-repository)
+  * [Exercise 0.1 - Create a Copy of This Repository](exercises/ex0#exercise-01---create-a-copy-of-this-repository)
   * [Exercise 0.2 - Discover your SAP BTP managed kubernetes landscape](exercises/ex0#exercise-02---login-to-your-btp-subaccount)
 
 * #### [Exercise 1 - SAP BTP, Kyma runtime easy with kyma CLI ](exercises/ex1#exercise-1---set-up-your-delivery-pipeline-and-transport-landscape)
 
   * [Exercise 1.0 - Get your hands dirty with kyma CLI](exercises/ex1#exercise-10---optional-create-a-github-account)
+  * [Exercise 1.1 - Firefighter access](exercises/ex1#exercise-11---create-a-copy-of-this-repository)
 
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
