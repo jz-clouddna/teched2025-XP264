@@ -129,7 +129,9 @@ env:
         export KUBECONFIG=:./uk-xp264.yaml:./xp264-000.yaml
         kubectl config view --flatten > all-in-one-kubeconfig.yaml
 
+        # https://able8.medium.com/how-to-merge-multiple-kubeconfig-files-into-one-36fc987c2e2f
         kubectl config get-clusters --kubeconfig all-in-one-kubeconfig.yaml
+        kubectl config get-contexts --kubeconfig all-in-one-kubeconfig.yaml
 
 
     - "name": "install kyma cli"
