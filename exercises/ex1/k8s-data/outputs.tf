@@ -125,3 +125,10 @@ output "all_dnsproviders" {
 output "OpenIDConnect" {
   value = module.k8s_context.OpenIDConnect
 }
+
+
+############## btp outputs ################################
+
+output "kyma_parameters" {
+  value = module.k8s_context.kyma_parameters
+}
