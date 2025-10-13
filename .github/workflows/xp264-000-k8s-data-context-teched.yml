@@ -9,16 +9,8 @@ on:
         options:
           - "apply"
           - "destroy"
-      GLOBALACCOUNT:
-        description: "teched globalaccount subdomain"
-        required: true
-        default: "c1f19148-71f7-4883-9f86-8d5ee7634dec"
-        type: "choice"
-        options:
-          - "c1f19148-71f7-4883-9f86-8d5ee7634dec"
-
       IDP:
-        description: "idp"
+        description: "platform idp"
         required: true
         default: "anuk8cmfw.accounts.ondemand.com"
         type: "choice"
@@ -46,10 +38,6 @@ on:
 ## Add shared Environment Variables across jobs here ##
 env:
   RUNTIME_ACTION: ${{ inputs.ACTION == 'deploy' && 'apply' || inputs.ACTION }}
-
-  RUNTIME_CONTEXT_WORKSPACE: "runtime-context-${{ inputs.subaccount_name }}-${{ github.event.inputs.GLOBALACCOUNT }}"
-  RUNTIME_WORKSPACE: "k8s-context-${{ inputs.subaccount_name }}-${{ github.event.inputs.GLOBALACCOUNT }}"
-  PROVIDER_WORKSPACE: "provider-context-${{ github.event.inputs.GLOBALACCOUNT }}" 
 
   CONFIG_DIRECTORY: "./exercises/ex1/k8s-data/"
   PATH_TO_TFSCRIPT: "./exercises/ex1/k8s-data/"  
@@ -180,6 +168,10 @@ env:
       env:
         CICD_TOKEN_FOR_TF_MODULES: ${{ secrets.CICD_TOKEN_FOR_TF_MODULES }}
         CICD_REPO_USERNAME_FOR_TF_MODULES: ${{ vars.CICD_REPO_USERNAME_FOR_TF_MODULES }}
+
+        RUNTIME_CONTEXT_WORKSPACE: "runtime-context-${{ inputs.subaccount_name }}-${{steps.cluster_info.outputs.GLOBALACCOUNT}}"
+        RUNTIME_WORKSPACE: "k8s-context-${{ inputs.subaccount_name }}-${{steps.cluster_info.outputs.GLOBALACCOUNT}}"
+        PROVIDER_WORKSPACE: "provider-context-${{steps.cluster_info.outputs.GLOBALACCOUNT}}" 
 
     - name: Terraform Apply 
       id: terraform_apply
