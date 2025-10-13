@@ -79,6 +79,12 @@ env:
         #githubJwt=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" -H "Accept: application/json; api-version=2.0" -H "Content-Type: application/json" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://${{ github.event.inputs.IDP }}" | jq -r '.')
         #echo $githubJwt | base64
         githubJwt=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" -H "Accept: application/json; api-version=2.0" -H "Content-Type: application/json" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://${{ github.event.inputs.IDP }}" | jq -r '.value')
+
+        EXP_TS=$(echo $githubJwt | jq -R 'split(".") | .[1] | @base64d | fromjson | .exp')
+        echo $EXP_TS
+        EXP_DATE=$(date -d @$EXP_TS --iso-8601=seconds)
+        echo $EXP_DATE
+
         echo $githubJwt | jq -R 'split(".") | .[0],.[1] | @base64d | fromjson'
         echo "githubJwt=$githubJwt" >> $GITHUB_OUTPUT
 
