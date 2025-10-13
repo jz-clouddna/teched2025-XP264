@@ -47,13 +47,10 @@ env:
   CONFIG_DIRECTORY: "./exercises/ex1/k8s-data/"
   PATH_TO_TFSCRIPT: "./exercises/ex1/k8s-data/"
 
-  GITHUB_OWNER: "ptesny"
   ## Additional env variables
+  ## https://developer.hashicorp.com/terraform/cli/config/environment-variables
   # TF_LOG: DEBUG ## Helpful for troubleshooting
-  # TF_MAX_TIMEOUT: "30m" ## If you wish to override the default "1h"
-##        githubJwt=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" -H "Accept: application/json; api-version=2.0" -H "Content-Type: application/json" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://${{ github.event.inputs.IDP }}" | jq -r '.value')
-##        githubJwt=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" -H "Accept: application/json; api-version=2.0" -H "Content-Type: application/json" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=gh-teched-7a69075f-7faf-4604-a62e-806648791dba" | jq -r '.value')
- 
+  # TF_MAX_TIMEOUT: "30m" ## If you wish to override the default "1h" 
 
 "jobs":
   "apply-manifest":
@@ -66,8 +63,8 @@ env:
     - name: Get short-lived GitHub-issued JWT
       id: get-github-jwt
       run: |
-        githubJwt=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" -H "Accept: application/json; api-version=2.0" -H "Content-Type: application/json" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://${{ github.event.inputs.IDP }}" | jq -r '.')
-        echo $githubJwt | base64
+        #githubJwt=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" -H "Accept: application/json; api-version=2.0" -H "Content-Type: application/json" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://${{ github.event.inputs.IDP }}" | jq -r '.')
+        #echo $githubJwt | base64
         githubJwt=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" -H "Accept: application/json; api-version=2.0" -H "Content-Type: application/json" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://${{ github.event.inputs.IDP }}" | jq -r '.value')
         echo $githubJwt | jq -R 'split(".") | .[0],.[1] | @base64d | fromjson'
         echo "githubJwt=$githubJwt" >> $GITHUB_OUTPUT
@@ -103,12 +100,11 @@ env:
       run: |
         wget -qO- https://ipecho.net/plain ; echo
 
-        ##cp btp-context/argocdaas-eu10.yaml ${{ env.PATH_TO_TFSCRIPT }}
-        echo ${{ secrets.ARGOCDAAS_EU10_BASE64 }} | base64 -d > ${{ env.PATH_TO_TFSCRIPT }}argocdaas-eu10.yaml
-        cat ${{ env.PATH_TO_TFSCRIPT }}argocdaas-eu10.yaml
+
         export KUBE_CONFIG_PATH=$KUBECONFIG
 
         export CONFIG_DIRECTORY=${{ env.CONFIG_DIRECTORY }}
+        export TF_REGISTRY_CLIENT_TIMEOUT=30s
         export BTP_ASSERTION=${{steps.get-github-jwt.outputs.githubJwt}}
 
         echo ${{ secrets.CICD_TOKEN_FOR_TF_MODULES }} | base64
@@ -134,6 +130,7 @@ env:
         export TF_WORKSPACE=${{ env.RUNTIME_WORKSPACE }}
         export KUBE_CONFIG_PATH=$KUBECONFIG
         export CONFIG_DIRECTORY=${{ env.CONFIG_DIRECTORY }}
+        export TF_REGISTRY_CLIENT_TIMEOUT=30s
 
         export BTP_ASSERTION=${{steps.get-github-jwt.outputs.githubJwt}}
 
