@@ -295,8 +295,8 @@ env:
       shell: bash
       run: |
 
-        echo "kyma_provisioning_info"
-        #echo ${{ steps.terraform_output.outputs.kyma_parameters }}
+        echo "khtmloutput"
+        #echo ${{ steps.json2html.outputs.htmloutput }}
 
 "name": "k8s-data-context-teched"
 
