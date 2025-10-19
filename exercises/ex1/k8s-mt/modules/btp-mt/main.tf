@@ -1,30 +1,3 @@
-/* discovery logic -- not required
-
-data "btp_globalaccount" "this" {}
-data "btp_subaccounts" "all" {}
-
-# look up all available subaccounts of a global acount that have a specific label attached
-#
-locals {
-  label_value_string = "${var.BTP_SUBACCOUNT}-context"
-  labels_filter      = "${var.BTP_SUBACCOUNT}-context=${local.label_value_string}"
-
-}
-data "btp_subaccounts" "filtered" {
-  labels_filter = local.labels_filter
-}
-
-output "btp_subaccounts_filtered" {
-  value = data.btp_subaccounts.filtered.values 
-}
-
-data "btp_subaccount" "context" {
-
-  id = data.btp_subaccounts.filtered.values[0].id
-}
-
-*/
-
 //
 resource "random_id" "context_id" {
   byte_length = 4
@@ -51,7 +24,7 @@ resource "btp_subaccount" "create_subaccount" {
       "${var.BTP_SUBACCOUNT}-trust"   = ["${var.BTP_CUSTOM_IDP}"],
       "${var.BTP_SUBACCOUNT}-region"  = ["${var.BTP_SA_REGION}"],
       "${var.BTP_SUBACCOUNT}-domain"  = ["${local.subaccount_domain}"],
-      "${var.BTP_SUBACCOUNT}-context" = ["${local.context_id}"]          
+      "${var.BTP_SUBACCOUNT}-context" = ["SAP-TechEd25-XP264"]          
   } 
 }
 

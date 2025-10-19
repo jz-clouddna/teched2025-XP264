@@ -6,7 +6,7 @@ data "btp_subaccounts" "all" {}
 # look up all available subaccounts of a global acount that have a specific label attached
 #
 locals {
-  labels_filter = "${var.BTP_SUBACCOUNT}-trust=${var.BTP_CUSTOM_IDP}"
+  labels_filter = "${var.BTP_SUBACCOUNT}-context=SAP-TechEd25-XP264"
 
 }
 data "btp_subaccounts" "filtered" {
@@ -18,7 +18,7 @@ output "btp_subaccounts_filtered" {
 }
 
 data "btp_subaccount" "context" {
-  id = data.btp_subaccounts.filtered.values[0].id
+  id = try(data.btp_subaccounts.filtered.values[0].id, "")
 }
 
 
