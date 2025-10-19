@@ -51,6 +51,10 @@ data "btp_subaccount_subscription" "faas_xp264_mt" {
   plan_name     = local.faas-app-xp264-049-saas[0]["plan_name"]
 }
 
+output "faas_xp264_mt" {
+  value = data.btp_subaccount_subscription.faas_xp264_mt
+}
+
 
 output "faas_xp264_mt_subscription_url" {
   value = data.btp_subaccount_subscription.faas_xp264_mt.subscription_url
