@@ -1,6 +1,6 @@
 //
 module "mt_context" {
-  source         = "./modules/k8s"
+  source         = "./modules/btp-mt"
 
   BTP_SUBACCOUNT = var.BTP_SUBACCOUNT
   BTP_SA_REGION  = var.BTP_SA_REGION
