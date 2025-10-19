@@ -1,5 +1,5 @@
 //
-module "k8s_context" {
+module "mt_context" {
   source         = "./modules/k8s"
 
   BTP_SUBACCOUNT = var.BTP_SUBACCOUNT
