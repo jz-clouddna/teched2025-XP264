@@ -7,19 +7,15 @@ You must have a personal github account for this session.
 
 This step is optional and you can be use instead any existing personal GitHub account of yours.
 
-1. Navigate to [GitHub](https://github.com/).
-
-2. Click **Sign up for GiHhub**.
-
-3. Otherwise, you may click on **Continue with Google** to sign up using your Google social login.
-
-4. Follow the prompts to create your personal account.
+- Navigate to [GitHub](https://github.com/).
+- Click **Sign up for GiHhub**.
+- Otherwise, you may click on **Continue with Google** to sign up using your Google social login.
+- Follow the prompts to create your personal account.
 
 ## Exercise 0.1 - Create a Copy of This Repository
 
  - Login to [GitHub](https://github.com/).
  - On the [main page of this repository](https://github.com/SAP-samples/teched2025-XP264), choose **Fork** on the top right.
-
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -103,7 +99,7 @@ Easy navigation with the session landscape site with your allocated student's us
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-<h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/site_navigation.png" alt="" height="600"/></a></h1>
+<h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/site_navigation.png" alt="" height="500"/></a></h1>
 </div>
 </td>
 </tr>
@@ -118,7 +114,7 @@ Easy navigation with the session landscape site with your allocated student's us
 <div>
 <h1><a href="https://url.sap/3kf0ol">
 <p float="left">
-  <img src="../ex0/images/site_navigation.png" width="400" height="400"/>
+  <img src="../ex0/images/site_navigation.png" width="400" height="800"/>
   <img src="../ex0/images/functional_architecture.png" width="400" height="800"/> 
 </p>
 </a></h1>
