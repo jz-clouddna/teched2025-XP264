@@ -5,13 +5,13 @@
 This repository contains the material for the SAP TechEd 2025 session catalog number XP264 - [**Explore how to run cloud-native applications on SAP BTP, Kyma runtime.**](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749035076180001oik0)  
 
   * Day-2 Operations: Maintenance, Monitoring, and Optimization
-  * Onpremise connectivity
+  * On-premise connectivity
 
 ## Overview
 
-This session introduces attendees to **Day-2** operation with SAP BTP, Kyma runtime - to help connect and extend enterprise applications in the cloud-native world.  
+This session introduces attendees to **Day-2** operations with SAP BTP, Kyma runtime - a mamnaged kubernetes runtime to help connect and extend enterprise applications in the cloud-native world.  
 
-> SAP BTP, Kyma Runtime (SKR) is a managed offering of a Kubernetes Cluster based on Gardener, extended by set of building blocks called Kyma modules. The idea is that each instance of the Kyma runtime is a separate Kubernetes cluster with its own set of modules. Clusters are not shared between customers, and each customer has its own isolated environment. All instances are managed by a central Kyma Control Plane (KCP) that orchestrates the lifecycle of the underlying hyperscaler project, the Gardener Cluster, and the Kyma modules.
+> SAP BTP, Kyma Runtime (SKR) is a managed offering of a Kubernetes Cluster based on Gardener, extended by a set of building blocks called Kyma modules. The idea being that each instance of SAP Kyma runtime is a separate Kubernetes cluster with its own set of modules. All instances are managed by a central Kyma Control Plane (KCP) that orchestrates the lifecycle of the underlying hyperscaler project, the Gardener Cluster, and the Kyma modules.
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
@@ -28,9 +28,9 @@ This session introduces attendees to **Day-2** operation with SAP BTP, Kyma runt
 
 ### During the session you will learn
 
-  * how to run applications on the Kyma runtime for SAP BTP and discover the power of smooth integration with cloud applications and on-premise systems using the advanced connectivity features.  
+  * how to operate applications with SAP BTP, Kyma runtime and discover the power of smooth integration with cloud applications and on-premise systems using the advanced connectivity features.  
   * to explore operational best practices from mastering troubleshooting techniques and intelligent root-cause analysis to event-driven autoscaling that adapts to your business needs in real time.
-  * about multitenant application with SAP BTP, Kyma runtime.
+  * about multitenant applications with SAP BTP, Kyma runtime.
 
 ## Requirements
 
