@@ -57,7 +57,7 @@ This step is optional and you can be use instead any existing personal GitHub ac
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-<h1><a href=""><img class="aligncenter" src="../ex0/images/SAP-TechEd25-XP264.png" alt="SAP-TechEd25-XP264" /></a></h1>
+<h1><a href="https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec"><img class="aligncenter" src="../ex0/images/SAP-TechEd25-XP264.png" alt="SAP-TechEd25-XP264" /></a></h1>
 </div>
 </td>
 </tr>
@@ -65,10 +65,11 @@ This step is optional and you can be use instead any existing personal GitHub ac
 </table>   
 
 - The BTP landscape has a number of subaccounts or runtime contexts.  
-- Most of the untime contexts are hosted in the same region - in the EU20 data center (Azure/Netherlands)
-- Still, there a few with in the EU10 data center (AWS/Francfort)
-- Each subaccount can host a single kyma runtime environment.
-- Each kyma environment is a kyma kuberneters cluster in the Azure or AWS region of your choice...which may be different from the BTP subaccount region
+- Most of the runtime contexts are hosted in the same BTP region - in the EU20 data center (Azure/Netherlands)
+- However, there are a few in the EU10 data center (AWS/Francfort) as well.
+- Each BTP subaccount can host a single kyma runtime environment.
+- Each kyma runtim environment maps into a single kuberneters cluster in the Azure or AWS region of your choice.
+- Please note the kyma cluster region may be different from the BTP subaccount region.
 
 
 | Account Name              | Type        |                                                                                                                                Description |
@@ -76,14 +77,22 @@ This step is optional and you can be use instead any existing personal GitHub ac
 | btp-argocd                |  Session Master  | with a shared ArgoCD instance (with SSO for all participants)             |
 | btp-bootstrap             |  Session Master  | XP264 session bootstrap context for the terraform automation. |
 | btp-provider              |  Session Master  | with shared SAP HANA Cloud and Cloud Logging (SAML SSO) services instances.|
+
+
+  * The rules of the game
+
+- The students can pick and choose any available kyma cluster from the following list:
+
+| Account Name              | Type        |                                                                                                                                Description |
+| :------------------------ | :---------: | :------------------------------------------------------------------------------------------------------------------------ |
 | btp-runtime               |  US EAST region  | Students runtime context with kyma environment in the us east region         |
 | uk-south                  |  UK SOUTH region | Students runtime contexts with kyma environment in the uk south region         |
 | japan-east                |  JAPAN EAST region | Students runtime contexts with kyma environment in the japan east region         |
-
  
- 
+- Each cluster has been configured to the same template with dedicated namespaces for each student.
+- As this is an academic exercise the complete user/namespace isolation has not been enforced 
 
-Easy navigation with the session landscape site with your allocated student's user name:  
+Last but not least, all students have accees to the Easy Navigation dashboard, namely
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
