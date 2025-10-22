@@ -85,8 +85,8 @@ For instance:
 <p float="left">
   <img src="../ex1/images/japan-east--admin.png" width="450" height="600"/>
   <img src="../ex1/images/japan-east--student.png" width="450" height="600"/>
-  <img src="../ex1/images/japan-east--admin-summary.png" width="400" height="600"/> 
-  <img src="../ex1/images/japan-east--student-summary.png" width="400" height="600"/> 
+  <img src="../ex1/images/japan-east--admin-summary.png" width="450" height="800"/> 
+  <img src="../ex1/images/japan-east--student-summary.png" width="450" height="800"/> 
 </p>
 </a></h1>
 </div>
