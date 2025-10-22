@@ -316,9 +316,9 @@ Run the following github action:
 
 ## Exercise 1.7 - BTP multitenancy with kyma
 
-In order to subscribe or to retrieve an existing subscription for your user run the following github action: 
+In order to subscribe or to retrieve an existing subscription for your session user (xp264-0xx) run the following github action: 
 
-| Runn Subscription workflow | Retrieve the subscription URL
+| Run Subscription workflow | Retrieve the subscription URL
 | -------- | ------------- |
 [teched-xp264-mt](../../../../actions/workflows/teched-xp264-mt.yml) | read the subscription URL in the workflow output
 
@@ -342,6 +342,12 @@ In order to subscribe or to retrieve an existing subscription for your user run 
 </tr>
 </tbody>
 </table> 
+
+Good to know:
+- There is a single subcription in each BTP tenant
+- All students users have same level of access in all the BTP consumer tenants.
+- However, the access to the subscribed app is SSO-ringfenced...
+- That means students can retrieve and consume the subsciption in whatever tenant they like with their own user login
 
 ## Summary
 
