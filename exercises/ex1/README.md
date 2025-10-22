@@ -344,11 +344,11 @@ In order to subscribe or to retrieve an existing subscription for your session u
 </table> 
 
 Good to know:
-- There is a single subcription in each BTP tenant
-- All students users have same level of access in all the BTP consumer tenants.
+- There is a single subscription in each consumer tenant (a BTP subaccount)
+- All students users as a group can access each consumer tenant...
 - However, the access to the subscribed app is SSO-ringfenced...
 - That means students can retrieve and consume the subsciption in whatever tenant they like with their own user login.
-- All the subsciption can be accessed by the provider admin from the subscription dashboard...
+- All the subsciptions can be viewed from the subscription dashboard on the provider side...
 
 ## Summary
 
