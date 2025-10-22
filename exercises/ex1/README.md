@@ -54,7 +54,7 @@ Each Kyma Runtime instance is a separate Kubernetes cluster managed by the KCP. 
 
 One does always need to climb the mountain of the onboarding documentation?  
 Not necessarily.  
-A well-designed landscape (Day-0) would offer some built-in automation.
+A well-thought and designed landscape (Day-0/Day-1) would offer some built-in automation.  
 
 Let's have a look at different kyma clusters through the lenses of the ready made automation workflows...  
 
