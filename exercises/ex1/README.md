@@ -347,7 +347,8 @@ Good to know:
 - There is a single subcription in each BTP tenant
 - All students users have same level of access in all the BTP consumer tenants.
 - However, the access to the subscribed app is SSO-ringfenced...
-- That means students can retrieve and consume the subsciption in whatever tenant they like with their own user login
+- That means students can retrieve and consume the subsciption in whatever tenant they like with their own user login.
+- All the subsciption can be accessed by the provider admin from the subscription dashboard...
 
 ## Summary
 
