@@ -36,8 +36,8 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        CLUSTER_CONTEXT: [ "${{ env.CLUSTER_CONTEXT }}" ]
-        IDP: [ "${{ env.IDP }}" ]
+        CLUSTER_CONTEXT: "${{ env.CLUSTER_CONTEXT }}"
+        IDP: "${{ env.IDP }}"
         namespace: [
                       "xp264-001",
                       "xp264-002",
