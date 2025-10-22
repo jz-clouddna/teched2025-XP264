@@ -32,7 +32,7 @@ variable "BTP_CUSTOM_IDP" {
 variable "admin_groups" {
   type        = list(string)
   description = "Defines the platform IDP groups to be added to each subaccount as administrators."
-  default     = ["GitHub", "CLS_admin", "argoCD_Admin"]
+  default     = ["GitHub", "CLS_admin"]
 }
 
 variable "viewer_groups" {
