@@ -51,7 +51,6 @@ jobs:
         echo 'CLUSTER_CONTEXT=$CLUSTER_CONTEXT'  >> "$GITHUB_OUTPUT"
 
 
-jobs:
   collect-diagnostic-data:
     needs: cluster-context
     strategy:
