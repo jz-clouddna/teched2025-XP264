@@ -57,8 +57,10 @@ The requirements to follow the exercises in this repository are...
    - SAP Cloud Identity Services (SAP IAS), 
    - SAP Cloud Logging, 
    - SAP HANA Cloud,
-   - ArgoCDaaS.
-   
+   - ArgoCDaaS,
+   - BTP Connectivity services,
+   - S4/HANA On-premise (private cloud) with SAP Cloud Connector in the private network.
+
   * All the SAP Kyma environments have been configured to the same template (via terraform automation).  
 
 
