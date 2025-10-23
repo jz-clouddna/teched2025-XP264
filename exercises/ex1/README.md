@@ -55,17 +55,14 @@ Some of the modules are added by default (istio, api-gateway and btp-operator), 
 
 ## Exercise 1.2 -Built-in automation flows
 
-Explore Kyma runtime environment with built-in automation flows:
-  - Does one always need to climb the mountain of the onboarding documentation?  
-  - A well-thought and designed landscape (Day-0/Day-1) would offer some built-in automation.  
-  - Both with several pre-configured CI/CD github action workflows and Terraform automation.
+Does one always need to climb the mountain of the onboarding documentation? Not necessarily.  
+A well-thought and designed landscape (Day-0/Day-1) would offer some built-in automation.  
+this landscape features several pre-configured CI/CD github action workflows and Terraform automation.
 
-Let's have a look at different kyma clusters through the lenses of the ready made automation workflows...  
+Explore Kyma runtime environments with the built-in automation flows.  
+Retrieve the key information about the state of the runtime environment... at a glance.  
 
-It's a bit like having blind date with SAP Kyma.  You are asked to run a few workflows that the Day-0/Day-1 team has designed and implemented.  
-These worklows should allow to retrieve the key information about the state of the runtime environment... at a glance.  
-
-Feel free to add any additional information you might like to retrieve...
+Please try it out yourself...
 
  | Kyma Region |  Console (dashboard) | Admin Worklow | Student Workflow | Data Collection Workflow
  | :---------  | --------- | :--------- | :------- | -----------
