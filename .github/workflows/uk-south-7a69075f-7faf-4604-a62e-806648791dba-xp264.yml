@@ -52,7 +52,7 @@
         kubectl delete all -l app.kubernetes.io/name=httpbin-$NAMESPACE -n $NAMESPACE
         ./kyma app push --name httpbin-$NAMESPACE --image kennethreitz/httpbin --istio-inject true --expose --container-port 80 --namespace $NAMESPACE
 
-"name": "uk-south-7a69075f-7faf-4604-a62e-806648791dba-xp264"
+"name": "uk-south--xp264 (do-no-use)"
 "on":
   "workflow_dispatch": 
     inputs:
