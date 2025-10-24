@@ -85,28 +85,12 @@ The requirements to follow the exercises in this repository are...
   - jq, curl. [kyma cli](https://github.com/kyma-project/cli/releases/download/3.2.0/kyma_Windows_x86_64.zip) 
 
 ```mermaid
-architecture-beta
-    service dns(logos:aws-route53)[Route 53]
-    service cf(logos:aws-cloudfront)[CloudFront]
-    service lb(logos:aws-ec2)[Load Balancer]
-    service ui(logos:nextjs)[UI]
-    service gateway(logos:aws-api-gateway)[API Gateway]
-    service auth(logos:aws-lambda)[Auth Service]
-    service authDb(logos:aws-dynamodb)[Auth DB]
-    auth:R --> L:authDb
-    service blog(logos:aws-lambda)[Blog Service]
-    service blogDb(logos:aws-dynamodb)[Blog DB]
-    blog:R --> L:blogDb
-    service analytics(logos:aws-lambda)[Analytics Service]
-    service analyticsIndex(logos:aws-open-search)[OpenSearch]
-    analytics:R --> L:analyticsIndex
-    dns:R --> L:cf
-    cf:R --> L:lb
-    lb:B --> T:ui
-    cf:R --> L:gateway
-    gateway:R --> L:auth
-    gateway:R --> L:blog
-    gateway:R --> L:analytics
+graph TD
+    A[Client] --> B[Load Balancer]
+    B --> C[Web Server 1]
+    B --> D[Web Server 2]
+    C --> E[Database]
+    D --> E
 ```
 
 ## [Let's get started...](exercises/ex0/)
