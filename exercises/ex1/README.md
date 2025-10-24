@@ -68,8 +68,14 @@ In this exercise you will:
 - 👉 Both securely and effortlessly!
 
 Do it yourself...
+- The pre-configured CI/CD automation workflows are to be manually triggered. 
+- They come as:
+  * admin (cluster-wide) 
+  * students (namespaced)   
+  * data collection (namespaced) workflows.
 - 👉 Pick a region and action of your choice...
-- 👉 Have fun...
+- 👉 Trigger the workflow...
+- 👉 Inspect the steps of each workflow...
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -77,12 +83,6 @@ Do it yourself...
 <td style="width: 71.6%; height: 193px;">
 
 <div>
-
-- The pre-configured CI/CD automation workflows are to be manually triggered. 
-- They come as:
-  * admin (cluster-wide) 
-  * students (namespaced)   
-  * data collection (namespaced) workflows.
 
 ```mermaid
 sequenceDiagram
@@ -99,7 +99,7 @@ sequenceDiagram
 
 <div>
 
-- 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
+👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
 
 | Kyma BTP Region (Cockpit) |  Kyma dashboard | Admin Worklow (cluster-wide) | Student Workflow (namespaced)| Data Collection Workflow (namespaced)
  | :---------  | --------- | :--------- | :------- | -----------
