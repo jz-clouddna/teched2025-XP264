@@ -82,10 +82,10 @@ What does this action do?
 -------------
 This action automatically:
 
-- 🔐 Uses GitHub's OIDC token for secure authentication
-- ⚙️ Sets up your Kubernetes context (kubeconfig)
-- 🚀 Enables you to run kubectl commands in your workflow
-- 📁 Provides kubeconfig outputs for advanced use cases
+ 🔐 Uses GitHub's OIDC token for secure authentication
+ ⚙️ Sets up your Kubernetes context (kubeconfig)
+ 🚀 Enables you to run kubectl commands in your workflow
+
 **Benefits:**
 
 - ✅ No need to store Kubernetes credentials as secrets
