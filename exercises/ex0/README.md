@@ -47,33 +47,9 @@ This step is optional and you can be use instead any existing personal GitHub ac
  - Choose **Create Fork**. You are now brought to a copy of the repository in your GitHub account.
  - Choose **Activate Github Action**
 
-## Exercise 0.2 - Discover SAP-TechEd25-XP264 session landscape
-
-- Login to [SAP-TechEd25-XP264 Business Technology Platform - Cockpit](https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec) with your allocated student's credentials (SSO)
+## Exercise 0.2 - The rules of the game
 
 
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-<div>
-<h1><a href="https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec"><img class="aligncenter" src="../ex0/images/SAP-TechEd25-XP264.png" alt="SAP-TechEd25-XP264" /></a></h1>
-</div>
-</td>
-</tr>
-</tbody>
-</table>   
-
-- The BTP landscape has a number of subaccounts or runtime contexts.  
-- Most of the runtime contexts are hosted in the same BTP region - in the EU20 data center (Azure/Netherlands)
-- However, there are a few in the EU10 data center (AWS/Francfort) as well.
-- Each BTP subaccount can host a single kyma runtime environment.
-- Each kyma runtim environment maps into a single kuberneters cluster in the Azure or AWS region of your choice.
-- Please note the kyma cluster region may be different from the BTP subaccount region.
-
-
-
-### The rules of the game
 
 - Access to the landscape via Easy Navigation dashboard:  
 
@@ -111,6 +87,31 @@ Furthermore:
 | btp-argocd                |  Session Master  | with a shared ArgoCD instance (with SSO for all participants)             |
 | btp-bootstrap             |  Session Master  | XP264 session bootstrap context for the terraform automation. |
 | btp-provider              |  Session Master  | with shared SAP HANA Cloud and Cloud Logging (SAML SSO) services instances.|
+
+
+- Login to [SAP-TechEd25-XP264 Business Technology Platform - Cockpit](https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec) with your allocated student's credentials (SSO)
+
+
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div>
+<h1><a href="https://emea.cockpit.btp.cloud.sap/cockpit?idp=anuk8cmfw.accounts.ondemand.com#/globalaccount/c1f19148-71f7-4883-9f86-8d5ee7634dec"><img class="aligncenter" src="../ex0/images/SAP-TechEd25-XP264.png" alt="SAP-TechEd25-XP264" /></a></h1>
+</div>
+</td>
+</tr>
+</tbody>
+</table>   
+
+- The BTP landscape has a number of subaccounts or runtime contexts.  
+- Most of the runtime contexts are hosted in the same BTP region - in the EU20 data center (Azure/Netherlands)
+- However, there are a few in the EU10 data center (AWS/Francfort) as well.
+- Each BTP subaccount can host a single kyma runtime environment.
+- Each kyma runtim environment maps into a single kuberneters cluster in the Azure or AWS region of your choice.
+- Please note the kyma cluster region may be different from the BTP subaccount region.
+
+
 
 
 ## Exercise 0.3 - Solution brief. Funtional architecture
