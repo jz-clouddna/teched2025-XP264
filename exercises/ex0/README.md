@@ -64,18 +64,17 @@ Access to the landscape via Easy Navigation dashboard:
 </tbody>
 </table>  
 
-The taxonomy is the following:
-BTP subaccount/kyma runtime environment --> kyma cluster in the hyperscaler region 
+
 The students can pick and choose any available kyma cluster region the following list:
 
 | BTP region              | Kyma region        |                                                                                                                                Description |
 | :------------------------ | :---------: | :------------------------------------------------------------------------------------------------------------------------ |
-| us-east (eu20/azure)              |  US EAST region  | Students runtime context with kyma environment in the us east region         |
-| uk-south (eu20/azure)                 |  UK SOUTH region | Students runtime contexts with kyma environment in the uk south region         |
-| japan-east (eu20/azure)               |  JAPAN EAST region | Students runtime contexts with kyma environment in the japan east region         |
-| xp264-00  (eu20/azure)             |  UK SOUTH region  | Students runtime context with kyma environment in the us east region         |
-| xp264-001  (eu10/aws)                |  EU Central region | Students runtime contexts with kyma environment in the eu central region         |
-| xp264-050  (eu20/azure)              |  UK SOUTH region | Students runtime contexts with kyma environment in the uk south region        |
+| us-east (eu20/azure)              |  US EAST region  | kyma environment with the cluster in the us east region         |
+| uk-south (eu20/azure)                 |  UK SOUTH region | kyma environment with the cluster in the uk south region         |
+| japan-east (eu20/azure)               |  JAPAN EAST region | kyma environment with the cluster in the japan east region         |
+| xp264-00  (eu20/azure)             |  UK SOUTH region  | kyma environment with the cluster in the uk south region         |
+| xp264-001  (eu10/aws)                |  EU Central region | kyma environment with the cluster in the eu central region         |
+| xp264-050  (eu20/azure)              |  UK SOUTH region | kyma environment with the cluster in the uk south region        |
 
 
 Good to know: 
