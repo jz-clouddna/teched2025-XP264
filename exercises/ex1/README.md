@@ -117,11 +117,12 @@ sequenceDiagram
 </table>  
 
 
-Explanation. What happened?
+Explanation. What has happened?
 ----------
 - You have manually triggered the pre-configured CI/CD automation workflows.
 - Workflows execution is divided into steps. Each step represents a dedicated task.
-- 👉 Inspect the steps of each of the worklow you have run, as depicted below:
+
+👉 Inspect the steps of each of the worklow you have run, as depicted below:
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -162,20 +163,17 @@ Good to know:
   * kubernetes provider 
   * kubectl provider
 
-Good to know: 
 - The security is paramount!
 - The automated workflows leverage the dynamic OIDC credentials with Github Actions acting as the OIDC token provider in the context of a running job. 
 - Thus, there is no need to rely on static credentials or be compelled to use a vault.
-- The implemented mechanism ensures the credentials are rotated automatically which makes is suitable for long running pipelines as well.
+- The implemented mechanism ensures the credentials are rotated automatically which makes it suitable for long running pipelines as well.
 
-What is happening ?
-
-- These workflows automatically: 
-  - 🔐 use GitHub's OIDC token for secure authentication
-  - ⚙️ set up your Kubernetes context (kubeconfig)
+- In a nutshell, the automation workflows: 
+  - 🔐 leverage GitHub's OIDC token for secure authentication
+  - ⚙️ set up your Kubernetes kubeconfig with single or multiple contexts
   - 🚀 enable you to run kubectl commands in your workflow
   - 🚀 enable you to run kyma cli commands in your workflow
-  - 🚀 enable you to run terraform automation in your workflow
+  - 🚀 enable you to run terraform automation flows in your workflow
 
   **Benefits:**
 
@@ -188,6 +186,7 @@ What is happening ?
 
 
 Excercise takeaways:
+- Ease of use with the emphasis on lowering the cost of the run with Day-2 operations
 - Think about any additional cluster information you might like to add or amend...
 
 ## Exercise 1.3 - Zoom on Kyma CLI
