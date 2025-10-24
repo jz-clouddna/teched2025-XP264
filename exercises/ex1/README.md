@@ -72,6 +72,18 @@ These automations are like fuel to your kubernetes engines and environments
 <div>
 <h1><a href=""><img class="aligncenter" src="../ex1/images/engine_fuel_small.jpg" alt="" /></a></h1>
 </div>
+<div>
+
+```mermaid
+sequenceDiagram
+    Kyma Region (BTP Cockpit) ->> Admin Worklow (cluster-wide): cluster-wide
+    Kyma Region (BTP Cockpit)-->>Student Workflow (namespaced): namespaced
+    Kyma Region (BTP Cockpit)--x Data Collection Workflow (namespaced): cluster diagnostic ckeck
+    Note left of Kyma Region (BTP Cockpit): Pick a region<br/>and action<br/>of your choice.
+
+```
+
+</div>
 </td>
 </tr>
 </tbody>
