@@ -78,7 +78,8 @@ They come in three different flavors, namely as:
 <tbody>
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
-<div className="content" href=https://docs.github.com/en/actions/get-started/understand-github-actions >
+<a href="https://docs.github.com/en/actions/get-started/understand-github-actions" >
+<div>
 Let's have a look at the common building blocks (steps) of a github action workflow]:
 <p float="left">  
 
@@ -90,10 +91,11 @@ graph TD
     D(Setup Kube Context) -- kubeconfig permissions check --> E
     E(check permissions) -- the belows steps may differ from one worklow to another --> F(Other steps)
 
-    click B "http://www.github.com" "This is a tooltip for a link" _blank
+    click B "http://www.github.com"  _blank
 ```
 </p>
 </div>
+</a>
 </td>
 </tr>
 </tbody>
