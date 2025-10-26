@@ -93,7 +93,7 @@ graph TD
 
     click B href "https://github.com/marketplace/actions/checkout" "checkout repository" _blank
     click C href "https://github.com/marketplace/actions/helm-tool-installer" "Install helm" _blank
-    click D href "https://github.com/marketplace/actions/kubernetes-set-context" _blank
+    click D "https://github.com/marketplace/actions/kubernetes-set-context" _blank
 
 ```
 </p>
