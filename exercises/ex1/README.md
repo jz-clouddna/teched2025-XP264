@@ -128,6 +128,15 @@ sequenceDiagram
     Note left of Admin Worklow (cluster-wide): Choose a workflow<br/>and open it<br/>with the right click.
 ```
 ```mermaid
+---
+title: Hello Title
+config:
+  theme: base
+  "securityLevel": "loose"
+  themeVariables:
+    primaryColor: "#00ff00"
+---
+
 graph TD
    DIR("<img src='../landscape/uksouth/kyma-dashboard_url_uksouth.png'; width='75' />")
 ```
