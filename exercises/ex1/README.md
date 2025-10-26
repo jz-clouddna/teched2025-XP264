@@ -74,6 +74,28 @@ They come in three different flavors, namely as:
 * students (namespaced)   
 * data collection (namespaced) workflows.
 
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div>
+<p float="left">  
+
+```mermaid
+graph TD
+    A[Set up job] --> B
+    B[Check out Git repository] --> C
+    C[Install helm] --> D
+    D[Setup Kube Context] --> E
+    E[check permissions] --> F[Other steps]
+```
+</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table> 
+
 Time to do it yourself...  
 - 👉 Pick a region and action of your choice...
 - 👉 Trigger the workflow...(hint: you may run them all at once in parallel)
