@@ -132,9 +132,10 @@ sequenceDiagram
 title: Hello Title
 config:
   theme: base
-  securityLevel: loose
   themeVariables:
     primaryColor: "#00ff00"
+params:
+  mermaidInitialize: '{ "securityLevel": "loose" }'
 ---
 
 graph TD
