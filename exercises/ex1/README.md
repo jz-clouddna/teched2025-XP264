@@ -122,7 +122,7 @@ They come in three different flavors, namely as:
 * students workflows (namespaced)   
 * data collection workflows (namespaced).
 
-<table style="width: 100%; height:800; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<table style="width: 100%;  border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
