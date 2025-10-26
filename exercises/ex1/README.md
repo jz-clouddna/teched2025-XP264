@@ -91,9 +91,9 @@ graph TD
     D(Setup Kube Context) -- kubeconfig permissions check --> E
     E(check permissions) -- the below steps may differ from one worklow to another --> F(Other steps)
 
-    click B "https://github.com/marketplace/actions/checkout" "This is a tooltip for a link" _blank
-    click C "https://github.com/marketplace/actions/helm-tool-installer" "This is a tooltip for a link" _blank
-    click D "https://github.com/marketplace/actions/kubernetes-set-context" "This is a tooltip for a link" _blank
+    click B href "https://github.com/marketplace/actions/checkout" "checkout repository" _blank
+    click C href "https://github.com/marketplace/actions/helm-tool-installer" "Install helm" _blank
+    click D href "https://github.com/marketplace/actions/kubernetes-set-context" _blank
 
 ```
 </p>
