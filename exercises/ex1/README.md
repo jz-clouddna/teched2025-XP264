@@ -88,7 +88,10 @@ graph TD
     B(Check out Git repository) --> C
     C[Install helm] -- create kubeconfig with dynamic credentials --> D
     D(Setup Kube Context) -- kubeconfig permissions check --> E
-    E(check permissions) -- the below steps may differ from one worklow to another --> F(Other steps)
+    E(check permissions) -- the below steps may differ from one worklow to another --> F{Other steps}
+    F -->|Admin| G[cluster-wide]
+    F -->|Student| H[namespaced]
+    F -->|Diagnostic| I[fa:fa-car namespaced]    
 
     click A href "https://docs.github.com/en/actions/get-started/understand-github-actions" _parent
     click B href "https://github.com/marketplace/actions/checkout" "checkout repository" _blank
@@ -118,8 +121,8 @@ Time to do it yourself...
 ```mermaid
 sequenceDiagram
     Kyma Region (BTP Cockpit)-->> Admin Worklow (cluster-wide): cluster-wide automation
-    Kyma Region (BTP Cockpit)-->>Student Workflow (namespaced): namespaced auomation
-    Kyma Region (BTP Cockpit)--x Data Collection Workflow (namespaced): cluster diagnostic ckeck
+    Kyma Region (BTP Cockpit)-->> Student Workflow (namespaced): namespaced auomation
+    Kyma Region (BTP Cockpit)-->> Data Collection Workflow (namespaced): cluster diagnostic ckeck
     Note left of Kyma Region (BTP Cockpit): Pick a region<br/>and action<br/>of your choice.
     Note left of Admin Worklow (cluster-wide): Choose a workflow<br/>and open it<br/>with the right click.
 
