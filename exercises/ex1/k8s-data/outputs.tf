@@ -180,6 +180,11 @@ output "kymaruntime_kubeconfig" {
   value = nonsensitive(module.k8s_context.kymaruntime_kubeconfig)
 }
 
+output "kymaruntime_kubeconfig_base64" {
+  description = "base64-encoded kymaruntime_kubeconfig retrieved via the provisioning service API"
+  value = nonsensitive(module.k8s_context.kymaruntime_kubeconfig_base64)
+}
+
 output "kyma_serviceaccount" {
   description = "kyma_serviceaccount: requires kubectl-view_serviceaccount_kubeconfig plugin"
   value = "kubectl-view_serviceaccount_kubeconfig  default -n quovadis-btp"

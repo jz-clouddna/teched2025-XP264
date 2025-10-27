@@ -146,8 +146,12 @@ output "kymaruntime_bindings" {
 }
 
 output "kymaruntime_kubeconfig" {
-  
-  //value = local.kymaruntime_bindings != null ? jsondecode(local.kymaruntime_bindings).credentials.kubeconfig : ""
+  description = "jsondecoded kymaruntime_kubeconfig"
+  value = local.kymaruntime_bindings != null ? jsondecode(local.kymaruntime_bindings).credentials.kubeconfig : ""
+}
+
+output "kymaruntime_kubeconfig_base64" {
+  description = "base64-encoded kymaruntime_kubeconfig"
   value = local.kymaruntime_bindings != null ? base64encode(jsondecode(local.kymaruntime_bindings).credentials.kubeconfig) : ""
 
 }
