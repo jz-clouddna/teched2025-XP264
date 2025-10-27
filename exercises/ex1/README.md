@@ -130,10 +130,10 @@ They come in three different flavors, namely as:
 <td> Github automation workflow </td> <td> Sequence diagram </td>
 </tr>
 <tr>
-<td> common steps </td>
+<td> 👉 Let's have a look at the common building blocks (steps) of a github action workflow </td>
 <td>
 <div>
-👉 Let's have a look at the common building blocks (steps) of a github action workflow
+
  
 ```mermaid
 ---
