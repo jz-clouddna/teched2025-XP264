@@ -215,6 +215,7 @@ sequenceDiagram
   participant kube as Setup Kube Context
   participant check as permissions check
   participant other as other
+  Note over job: pick the runner for the job
   Note over repo: checkout repository
   Note over kube: create kubeconfig with<br/>dynamic credentials
   Note over check: kubeconfig<br>permissions check
