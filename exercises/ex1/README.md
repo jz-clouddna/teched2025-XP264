@@ -224,7 +224,7 @@ sequenceDiagram
   check ->> other: admin<br>student<br>diagnostics
 
 ```
-
+<hr>
 👉 Let's have a look at the other steps of a github action workflow
 
 
