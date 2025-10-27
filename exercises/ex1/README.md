@@ -124,7 +124,25 @@ They come in three different flavors, namely as:
 * data collection workflows (namespaced).
 
 
+<table>
+<tr>
+<td> Github automation </td> <td> workflow sequence </td>
+</tr>
+<tr>
+<td> 200 </td>
+<td>
+
 ```mermaid
+
+---
+title: Github automation workflow sequence
+config:
+  look: classic
+  theme: neutral
+  themeVariables:
+    primaryColor: "#00ff00"
+  securityLevel: "loose"
+---
 sequenceDiagram
   actor me as student
   participant job as Set up job
@@ -147,6 +165,32 @@ sequenceDiagram
   check ->> other: admin<br>student<br>diagnostics
 
 ```
+</td>
+</tr>
+<tr>
+<td> admin -- student -- checks </td>
+<td>
+
+```mermaid
+
+---
+config:
+  theme: base
+  look: classic
+---
+flowchart TD
+    F{"Other steps"} -- "cluster-wide" --> G["admin"]
+    F -- namespaced --> H["student"] & I["Diagnostic"]
+
+
+```
+
+</td>
+</tr>
+</table>
+
+
+
 
 <table style="width: 100%;  border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
