@@ -127,10 +127,10 @@ They come in three different flavors, namely as:
 
 <table>
 <tr>
-<td> Github automation workflow </td> <td> Sequence diagram                                  </td>
+<td> Github automation workflow </td> <td> Sequence diagram </td>
 </tr>
 <tr>
-<td> common steps </td>
+<td> style="text-align: center;" common steps </td>
 <td>
  
 ```mermaid
