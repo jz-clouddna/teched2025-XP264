@@ -14,8 +14,10 @@ This step is optional and you can be use instead any existing personal GitHub ac
 
 ## Exercise 0.1 - Fork the teched2025-XP264 repository.
 
- - Login to [GitHub](https://github.com/).
- - On the [main page of this repository](https://github.com/SAP-samples/teched2025-XP264), choose **Fork** on the top right.
+This is mandatory to run the session exercises which are implemented as github actions.
+
+ - 👉 Login to [GitHub](https://github.com/).
+ - 👉 On the [main page of this repository](https://github.com/SAP-samples/teched2025-XP264), choose **Fork** on the top right.
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -29,7 +31,7 @@ This step is optional and you can be use instead any existing personal GitHub ac
 </tbody>
 </table>   
 
- - Make sure that the **Owner** matches the GitHub account that you want to use for this session. All the other information can remain the same.
+ - 👉 Make sure that the **Owner** matches the GitHub account that you want to use for this session. All the other information can remain the same.
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
