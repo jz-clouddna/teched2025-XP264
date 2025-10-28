@@ -1,5 +1,7 @@
 # Exercise 2 - Use External Scalers. Keda - the Kubernetes Event-driven Autoscaler.
 
+## Exercise 2.0 - Introduction to kubernetes autoscalers
+
 - [KEDA](https://keda.sh/docs/2.18/), the Kubernetes Event-driven Autoscaler.  
 - [Use External Scalers witk SAP Kyma](https://kyma-project.io/#/serverless-manager/user/tutorials/01-130-use-external-scalers)
 - [Keda examples](https://github.com/kyma-project/keda-manager/tree/main/examples)
@@ -11,7 +13,7 @@ https://github.com/SAP-samples/kyma-runtime-samples/blob/main/keda-cron-scaler/R
 
 - Have your Function with the replicas value set to 1 to prevent the internal Serverless HPA creation.
 
-## Exercise 2.1 HPA
+## Exercise 2.1 - HPA
 
 
 - step1:
@@ -63,7 +65,7 @@ What about scaling down to zero ?
 
 
 
-## Exercise 2.2 KEDA
+## Exercise 2.2 - KEDA
 
 After completing these steps you will have...
 
@@ -101,7 +103,7 @@ EOF
 
 
 
-## Exercise 2.3 KEDA's Cron-Based Scaler
+## Exercise 2.3 - KEDA's Cron-Based Scaler
 
 KEDA offers a broad range of scaling strategies, one of which is the **cron-based scaler**. This scaler allows you to schedule scaling actions according to the time of day, an invaluable feature for managing predictable fluctuations in workload.
 

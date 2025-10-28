@@ -18,31 +18,6 @@ All these clusters are managed by a central Kyma Control Plane (KCP) that orches
  - the Gardener Cluster, 
  - and the Kyma modules.
 
-
-
-```mermaid
-
-flowchart TD
- subgraph subGraph0["SAP Kyma Runtime"]
-        B["Hyperscaler project"]
-        D["Kyma modules"]
-        C["Gardener Kubernetes cluster"]
-  end
-    B --> C
-    C --> D
-    E["Kyma Control Plane"] <--> subGraph0
-    F["BTP Services"] <--> subGraph0
-
-    style B stroke-width:4px,stroke-dasharray: 0
-    style subGraph0 stroke:#616161
-    click D "https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-environment"
-
-
-
-
-```
-
-
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
 <tr style="height: 193px;">
@@ -156,7 +131,13 @@ The requirements to follow the exercises in this repository are...
   * [Exercise 1.6 - Multitenancy playground](exercises/ex1#exercise-16---subscribe-to-a-kyma-multitenant-application)
 
 
-* #### [Exercise 2 - Using External Scalers. Keda](exercises/ex2#exercise-2---use-external-scalers-keda)
+* #### [Exercise 2 - Using External Scalers. Keda - the Kubernetes Event-driven Autoscaler.](exercises/ex2#exercise-2---use-external-scalers-keda---the-kubernetes-event-driven-autoscaler)
+  * [Exercise 2.0 - Introduction to kubernetes autoscalers](exercises/ex2#exercise-20---sign-up-for-a-new-github-account)
+  * [Exercise 2.1 - HPA](exercises/ex2#exercise-21---hpa)
+  * [Exercise 2.2 - KEDA](exercises/ex2#exercise-22---keda)
+  * [Exercise 2.3 - KEDA - Cron based scaler](exercises/ex2#exercise-23---kedas-cron-based-scaler)
+
+
 
 * #### [Exercise 3 - Explore Kyma Telemetry Features with SAP Cloud Logging](exercises/ex3#exercise-3---exploring-kyma-telemetry-with-sap-cloud-logging)
 

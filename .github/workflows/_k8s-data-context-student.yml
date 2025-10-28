@@ -228,11 +228,11 @@ env:
         kubectl get secrets -n $NAMESPACE
 
     # GitHub Action reference: https://github.com/jupyterhub/action-k8s-namespace-report
-    - name: Kubernetes namespace report
-      uses: jupyterhub/action-k8s-namespace-report@v1
-      if: always()
-      with:
-       namespace: ${{ env.NAMESPACE }}
+#    - name: Kubernetes namespace report
+#      uses: jupyterhub/action-k8s-namespace-report@v1
+#      if: always()
+#      with:
+#       namespace: ${{ env.NAMESPACE }}
 
     - "name": "install kyma cli"
       uses: kyma-project/setup-kyma-cli@v1
