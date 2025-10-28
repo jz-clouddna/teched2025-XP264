@@ -405,7 +405,10 @@ env:
 
         echo "kubeconfig base64 encoded as string"
         kymaruntime_kubeconfig_base64=$(terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output kymaruntime_kubeconfig_base64)
-        echo "kymaruntime_kubeconfig_base64=$kymaruntime_kubeconfig_base64" >> $GITHUB_OUTPUT
+        echo 'kymaruntime_kubeconfig_base64<<EOF' >> $GITHUB_OUTPUT
+        echo "$kymaruntime_kubeconfig_base64" >> $GITHUB_OUTPUT
+        echo 'EOF' >> $GITHUB_OUTPUT
+        #echo "kymaruntime_kubeconfig_base64=$kymaruntime_kubeconfig_base64" >> $GITHUB_OUTPUT
 
         echo "kubeconfig as string"
         kymaruntime_kubeconfig=$(terraform -chdir=${{ env.PATH_TO_TFSCRIPT }} output -raw kymaruntime_kubeconfig)
@@ -430,16 +433,18 @@ env:
     - name: Save kubeconfig for later use
       run: |
         # Example: Upload kubeconfig as artifact
-        echo "${{ steps.terraform_output.outputs.kymaruntime_kubeconfig_base64 }}" | base64 -d > ./my-kubeconfig.yaml
+        echo "${{ steps.terraform_output.outputs.kymaruntime_kubeconfig_base64 }}" > ./my-kubeconfig.yaml
         cat ./my-kubeconfig.yaml 
+        cat ./my-kubeconfig.yaml | base64 -d
+        
         echo "${{ steps.terraform_output.outputs.kymaruntime_kubeconfig }}" > ./my-kubeconfig2.yaml
         cat ./my-kubeconfig2.yaml 
-        echo "${{ steps.terraform_output.outputs.kubeconfig_sa }}" > ./my-kubeconfig3.yaml
-        #cat ./my-kubeconfig3.yaml | sed 's/./& /g'
-        cat ./my-kubeconfig3.yaml
+        echo "${{ steps.terraform_output.outputs.kubeconfig_sa }}" > ./my-kubeconfig_sa.yaml
+        #cat ./my-kubeconfig_sa.yaml | sed 's/./& /g'
+        cat ./my-kubeconfig_sa.yaml
 
-        kubectl get nodes --kubeconfig ./my-kubeconfig3.yaml
-        kyma alpha diagnose -f json --kubeconfig ./my-kubeconfig3.yaml | jq -r '.metadata' 
+        kubectl get nodes --kubeconfig ./my-kubeconfig_sa.yaml
+        kyma alpha diagnose -f json --kubeconfig ./my-kubeconfig_sa.yaml | jq -r '.metadata' 
  
 
 #    - name: Convert JSON to HTML Table
