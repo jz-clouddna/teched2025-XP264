@@ -67,7 +67,7 @@ flowchart TD
 
 The requirements to follow the exercises in this repository are...
 
-- You need to fork the repository. Thus, you may need to have a GitHub user.
+- You need to fork the repository at activate the github actions at the fork.  Thus, you may need to have a GitHub user.
   If you haven't got one yet, please [sign-up](exercises/ex0#exercise-00---sign-up-for-a-new-github-account) on GitHub before the workshop or at the very beginning of the session.
 
 - The session content is delivered *exclusively* on the SAP-Samples github, and many excercises have been implemented as CI/CD [Github Actions worflows](https://docs.github.com/en/actions/get-started/understand-github-actions) (GHA). 
@@ -116,7 +116,7 @@ The requirements to follow the exercises in this repository are...
 * #### [Exercise 0 - Preparation Steps](exercises/ex0#exercise-0---preparation-steps)
 
   * [Exercise 0.0 - Sign up for a GitHub account](exercises/ex0#exercise-00---sign-up-for-a-new-github-account)
-  * [Exercise 0.1 - Fork the teched2025-XP264 repository](exercises/ex0#exercise-01---create-a-copy-of-this-repository)
+  * [Exercise 0.1 - Fork the teched2025-XP264 repository](exercises/ex0#exercise-01---ork-the-teched2025-xp264-repository)
   * [Exercise 0.2 - Let the session begin!](exercises/ex0#exercise-02---the-rules-of-the-game)
   * [Exercise 0.3 - BTP landscape. Solution brief](exercises/ex0#exercise-03---bbtp-landscape-solution-brief)
   * [Exercise 0.4 - Let's talk SAP BTP, Kyma Runtime architecture](exercises/ex0#exercise-04---sap-btp-kyma-runtime-skr-architecture)
