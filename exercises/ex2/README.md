@@ -8,7 +8,7 @@
 - [SAP BTP, Kyma Runtime: Leveraging KEDA module capabilities for efficient and cost-effective scaling | SAP Blogs](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-kyma-runtime-leveraging-keda-module-capabilities-for-efficient-and/ba-p/13573526)
 
 
-https://github.com/SAP-samples/kyma-runtime-samples/blob/main/keda-cron-scaler/README.md  
+
 
 
 - Have your Function with the replicas value set to 1 to prevent the internal Serverless HPA creation.
