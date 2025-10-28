@@ -5,12 +5,16 @@ You must have a personal github account for this session.
 
 ## Exercise 0.0 - Sign up for a new GitHub account
 
-This step is optional and you can be use instead any existing personal GitHub account of yours.
+- 👉 You must be able to fork the repository and activate the github actions at the fork.  
+  This is mandatory to follow the exercises in this session!
 
-- Navigate to [GitHub](https://github.com/).
-- Click **Sign up for GiHhub**.
-- Otherwise, you may click on **Continue with Google** to sign up using your Google social login.
-- Follow the prompts to create your personal account.
+  Thus, you may need a GitHub user.  
+  If you haven't got one yet, please sign up following the instructions below:
+
+- 👉 Navigate to [GitHub](https://github.com/).
+- 👉 Click **Sign up for GiHhub**.
+- 👉 Otherwise, you may click on **Continue with Google** to sign up using your Google social login.
+- 👉 Follow all the prompts to create your personal account.
 
 ## Exercise 0.1 - Fork the teched2025-XP264 repository.
 
@@ -46,8 +50,8 @@ This is mandatory to run the session exercises which are implemented as github a
 </tbody>
 </table>   
 
- - 👉 Choose **Create Fork**. You are now brought to a copy of the repository in your GitHub account.
- - 👉 Choose **Activate Github Action**
+ - 👉 Choose **Create Fork**. You are now redirected to the copy of the teched repository in your personal GitHub account.
+ - 👉 Choose **Activate Github Actions** This is mandatory for this session.
 
 ## Exercise 0.2 - The rules of the game
 
