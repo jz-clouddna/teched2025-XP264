@@ -396,23 +396,16 @@ Excercise takeaways:
 - Ease of use with the emphasis on lowering the cost of the run with Day-2 operations
 - Think about any additional cluster information you might like to add or amend...
 
-## Exercise 1.3 - Zoom on Kyma CLI
+## Exercise 1.3 - Zoom on Kyma CLI (optional)
 
- - In a nutshell, Kyma CLI extends the capabilities of the ubiquitous kubectl CLI to a range of kyma specific features.  
-
-- [Kyma CLI action](https://github.com/marketplace/actions/setup-kyma-cli) is already part of the automated CI/CD workflows
-- It is available for installation in pipelines from the [github actions marketplace](https://github.com/marketplace?query=kyma).  
-
-```
-- uses: kyma-project/setup-kyma-cli@v1
-  with:
-    - version: latest
-```
+In a nutshell, Kyma CLI extends the capabilities of the ubiquitous kubectl CLI against a range of kyma specific features.  
 
 
 Good to know: 
-- It is already pre-installed on the tech laptops.  
+- It is already pre-installed on the tech laptops and can be used from a terminal window/VSCode integrated terminal
 - It is also available out-of-the-box in the automation workflows prepared for this session.
+- It is available for [installation](https://github.com/marketplace/actions/setup-kyma-cli) in the github CI/CD pipelines from the [github actions marketplace](https://github.com/marketplace?query=kyma).  
+
 
 👉 run `kyma version`
 
@@ -447,13 +440,16 @@ Use "kyma [command] --help" for more information about a command.
 ```
 
 
-Please get familiar with the available [commands](https://github.com/kyma-project/cli/tree/3.2.0/docs/user/gen-docs)... 
+- 👉 Please get familiar with the other available [commands](https://github.com/kyma-project/cli/tree/3.2.0/docs/user/gen-docs)... 
 
 ## Exercise 1.4 - Fire-fighter access to your kyma cluster
 
 There are two ways to gain access to a kyma cluster in XP264 session landscape, namely:
 - from a terminal window using the downloaded user OIDC kubeconfig with either `kubectl` or `kyma CLI` and
 - from within a github action workflow and/or terraform automation (preferred way)
+
+We shall capitalize on the student diagnostic github action that provides a service account based kubeconfig as an artifact.
+
 
 
 The first method requires a kubectl oidc plugin (already pre-installed on the laptops) and cannot be performed in a headless context, for instance from a CI/CD pipeline or workflow.  
@@ -532,7 +528,7 @@ kyma alpha kubeconfig generate --serviceaccount xp264-000-sa  --namespace xp264-
 ```  
 
 
-## Exercise 1.5 - Kyma diagnostic check
+## Exercise 1.5 - Terraforming kyma runtime environment
 
 Let's leverage the kyma cli to get simple metadata from a kyma cluster
 
