@@ -216,40 +216,6 @@ sequenceDiagram
 
 --->
 
-## Exercise 1.1 - Easy access to your teched landscape with SSO.
-
-- This SAP Workzone dashboard is to assist you with the landscape discovery and ease the navigation thorugh the landscape components.
-- Please use your allocated student's credentials to login...
-
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-<div> 
-<h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/site_navigation.png" alt="" height="600"/></a></h1>
-</div>
-</td>
-</tr>
-</tbody>
-</table>   
-  
-
-
-
-Here goes a diagram of the functional architecture of the solution
-
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-<div>
-<h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../ex0/images/functional_architecture.png" alt=""/></a></h1>
-</div>
-</td>
-</tr>
-</tbody>
-</table>   
-
 
 ## Summary
 

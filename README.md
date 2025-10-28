@@ -118,11 +118,11 @@ The requirements to follow the exercises in this repository are...
   * [Exercise 0.0 - Sign up for a GitHub account](exercises/ex0#exercise-00---sign-up-for-a-new-github-account)
   * [Exercise 0.1 - Create a Copy of This Repository](exercises/ex0#exercise-01---create-a-copy-of-this-repository)
   * [Exercise 0.2 - Let the session begin!](exercises/ex0#exercise-02---the-rules-of-the-game)
-  * [Exercise 0.3 - Solution brief](exercises/ex0#exercise-03---solution-brief)
-
+  * [Exercise 0.3 - BTP landscape. Solution brief](exercises/ex0#exercise-03---bbtp-landscape-solution-brief)
+  * [Exercise 0.4 - Let's talk SAP BTP, Kyma Runtime architecture](exercises/ex0#exercise-04---sap-btp-kyma-runtime-skr-architecture)
+ 
 * #### [Exercise 1 - First things first. Getting to know SAP Kyma managed kubernetes runtime](exercises/ex1#exercise-1---first-things-first-getting-acquainted-with-sap-btp-kyma-runtime-skr)
 
-  * [Exercise 1.0 - Let's talk SAP BTP, Kyma Runtime architecture](exercises/ex1#exercise-10---lets-talk-sap-btp-kyma-runtime-skr-architecture)
   * [Exercise 1.1 - Easy access to your session landscape (with SSO).](exercises/ex1#exercise-11---easy-access-to-your-teched-landscape-with-sso)
   * [Exercise 1.2 - Built-in github automation flows](exercises/ex1#exercise-12---built-in-github-actions-automation-flows)
   * [Exercise 1.3 - Zoom on Kyma CLI (optional)](exercises/ex1#exercise-13---zoom-on-kyma-cli-optional)
