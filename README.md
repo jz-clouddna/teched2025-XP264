@@ -89,25 +89,25 @@ The requirements to follow the exercises in this repository are...
 > The session content is provided *exclusively* on the SAP-Samples github, and many excercises have been implemented as CI/CD [Github Actions worflows](https://docs.github.com/en/actions/get-started/understand-github-actions) (GHA). 
 
 > [!IMPORTANT]
-> Security is paramount. With the Github Action IDP-delegated authentication flow, there is no more need to provide kubernetes and btp terraform provider credentials when using [github actions](https://docs.github.com/en/actions/concepts/security/openid-connect#benefits-of-using-oidc). 
-  - ✅ The Github Action workflows acting as the [OIDC provider](https://docs.github.com/en/actions/concepts/security/openid-connect). 
-  - ✅ All the kubernetets environments in the landscape are configured to trust GitHub’s token identity provider. They come with the pre-configured OIDC applications leveraging the built-in Gardener OIDC shoot extension.
-  - ✅ SAP Cloud Identity Services acting as a platform IDP on the BTP side of the house has been federated with the Github actions OIDC Provider
-  - ✅ As a result, the very short-lived [credentials](https://docs.github.com/en/actions/concepts/security/openid-connect#understanding-the-oidc-token) are being fetched and rotated automatically on the behalf of the repository user for both kubernetes and btp platform operations.
+> The security is paramount! With the Github Action IDP-delegated authentication flow, there is no more need to provide kubernetes and btp credentials when using the [github actions](https://docs.github.com/en/actions/concepts/security/openid-connect#benefits-of-using-oidc). 
+>  - ✅ The Github Action workflows acting as the [OIDC provider](https://docs.github.com/en/actions/concepts/security/openid-connect). 
+>  - ✅ All the kubernetets environments in the landscape are configured to trust GitHub’s token identity provider. They come with the pre-configured OIDC applications leveraging the built-in Gardener OIDC shoot extension.
+>  - ✅ SAP Cloud Identity Services acting as a platform IDP on the BTP side of the house has been federated with the Github actions OIDC Provider
+>  - ✅ As a result, the very short-lived [credentials](https://docs.github.com/en/actions/concepts/security/openid-connect#understanding-the-oidc-token) are being fetched and rotated automatically on the behalf of the repository user for both kubernetes and btp platform operations.
 
 > [!WARNING]
 > Personal devices ought not to be used for this session.
 >
-> - However, the good news is you may run the **GHA-based exercises** directly, from your forked repository, in a browser on the **provided** teched laptops.
+> - However, the good news is you may run the **GHA-based exercises** directly, from your forked repository, in a Chrome browser on the **provided** teched laptops.
 
 > [!TIP]
 > **Session directions.**  
 >
-> The session is pretty packed with content.  To make the best use of your time you may want to follow the below tips.  
+> The session is pretty packed with content and information.  To make the best use of your time you may want to follow the below tips.  
 > - 👉 Run and take time to inspect the results of the built-in automations. Ask questions. And if you feel like doing, go ahead and create your own variants as well.
-> - 👉 The recommendation is, however, to go with the flow of the exercises, inspect the results, ask questions and leave the rest for the homework.
+> - 👉 The recommendation is, however, to go with the mere flow of the exercises and leave the rest for homework.
 >
-> - For all other exercises which may require a terminal use, you may use the VSCode integrated terminal.
+> - For any exercise which may require a terminal use, you may use the VSCode integrated terminal.
 
 > [!NOTE]
 > - As this is the Day-2 operation brief, the entire cloud landscape has been pre-configured with a number of shared components, namely:  
