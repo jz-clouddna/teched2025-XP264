@@ -134,7 +134,18 @@ As an illustration, the cron-based scaler enables you to:
 
 - **Manage High Traffic and Request Volume Peaks**: With the cron-based scaler, you can program your applications to upscale during peak hours or high-traffic events, such as Black Friday or New Year sales. The same functionality can be used to schedule your applications to upscale during off-peak hours for batch processing tasks.
 
-![bf](images/keda-scale-bf.png)
+
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div>
+<h1><a href="https://url.sap/53tot3"><img class="aligncenter" src="images/keda-scale-bf.png" alt="before" height="600"/></a></h1>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
 
 - **Optimize Resource Utilization and Reduce Expenses**: The cron-based scaler offers a solution to optimize resource utilization and reduce costs by allowing you to schedule your applications to downscale during non-working hours. This feature is useful for your **dev/stage/QA** clusters, which are not required during off-working hours.
 
@@ -146,9 +157,18 @@ As an illustration, the cron-based scaler enables you to:
 >
 > The cron scheduling is applicable only to customer workloads and **not to kyma components**.
 
-![off-work](images/keda-scale-off-work.png)
 
-
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div>
+<h1><a href="https://url.sap/f5p8di"><img class="aligncenter" src="images/keda-scale-off-work.png" alt="off-work" height="600"/></a></h1>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Summary
 
