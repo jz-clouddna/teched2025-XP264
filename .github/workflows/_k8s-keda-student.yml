@@ -106,7 +106,8 @@ env:
         kubectl get pod -n $NAMESPACE
         echo -e "display all hpas and scale objects in the namespace: $NAMESPACE..."
         kubectl get hpa -n $NAMESPACE || true
-        kubectl get hpa faas-srv -n $NAMESPACE || true
+        echo "show KEDA-HPA"
+        kubectl get hpa keda-hpa-faas-srv -n $NAMESPACE || true
 
     - "name": "scale-out the faas-srv function to min 5 replicas"
       "run": |
