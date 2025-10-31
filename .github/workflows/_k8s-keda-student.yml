@@ -134,11 +134,14 @@ env:
 
         echo "enumerate all the resource in the namespace"
         kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=faas-srv -n $NAMESPACE
-        echo "Wait until KEDA ScaleObject is ready"
+        echo -e "Wait until KEDA ScaleObject is ready\n"
+
+        echo "show KEDA ScaleObject"
         kubectl get scaledobject faas-srv -n $NAMESPACE || true
         kubectl get scaledobject faas-srv -n $NAMESPACE -o jsonpath="{.status.conditions[0]}" | jq        
-        kubectl wait --for=jsonpath="{.status.conditions[0].status}"=True ScaleObject faas-srv -n $NAMESPACE --timeout=90s
-        echo "show KEDA ScaleObject"
+        echo -e "Wait until KEDA ScaleObject is ready\n"
+        kubectl wait --for=jsonpath="{.status.conditions[0].status}"=True scaledobject faas-srv -n $NAMESPACE --timeout=90s
+        echo -e "show KEDA ScaleObject\n"
         kubectl get scaledobject faas-srv -n $NAMESPACE || true
         
         echo "Wait until KEDA-HPA is ready"
