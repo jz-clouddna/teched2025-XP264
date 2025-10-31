@@ -132,7 +132,7 @@ env:
              value: "50"
         EOF
 
-        echo "enumerate all the resource in the namespace"
+        echo "enumerate all the resource in the namespace - it may take quite some time to run"
         kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=faas-srv -n $NAMESPACE
         echo -e "Wait until KEDA ScaleObject is ready\n"
 
