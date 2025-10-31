@@ -119,9 +119,9 @@ env:
         kubectl autoscale function faas-srv -n $NAMESPACE --cpu='50%' --min=3 --max=10 || true        
         kubectl get hpa faas-srv -n $NAMESPACE || true
         
-        echo "Wait until HPA is ready"
+        echo "******** Wait until HPA is ready **********"
         kubectl wait --for=condition=ScalingActive hpa faas-srv -n $NAMESPACE --timeout=180s
-        echo "show HPA"
+        echo "***** show HPA ******"
         kubectl get hpa faas-srv -n $NAMESPACE || true
 
         echo "wait for function scale out and deployment rollout complete"
@@ -130,8 +130,10 @@ env:
 
         echo "enumerate all the resource in the namespace - it may take quite some time to run"
         kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=faas-srv -n $NAMESPACE
+        echo "enumerate all the resource in the namespace - it may take quite some time to run"
+        kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=faas-srv -n $NAMESPACE
 
-        echo "show HPA"
+        echo "***** show HPA ******"
         kubectl get hpa faas-srv -n $NAMESPACE || true
 
     - "name": "scale back to a single replica."
@@ -141,14 +143,15 @@ env:
         echo "scale back to a single replica"  
         kubectl autoscale function faas-srv -n $NAMESPACE --cpu='50%' --min=1 --max=1 || true        
         kubectl get hpa faas-srv -n $NAMESPACE || true
-        echo "Wait until HPA is ready"
+        echo "******** Wait until HPA is ready **********"
         kubectl wait --for=condition=ScalingActive hpa faas-srv -n $NAMESPACE --timeout=60s     
         kubectl get hpa faas-srv -n $NAMESPACE || true
         kubectl get pod -n $NAMESPACE  
 
-        echo "get rid of hpa"   
+        echo "**** get rid of hpa ********"   
         kubectl delete hpa faas-srv -n $NAMESPACE || true
-        kubectl get hpa faas-srv -n $NAMESPACE || true
+        kubectl wait --for=delete hpa/faas-srv --timeout=90s
+        kubectl get hpa faas-srv -n $NAMESPACE --ignore-not-found || true
         echo "display all pods in the namespace: $NAMESPACE..."
         kubectl get pod -n $NAMESPACE        
 
