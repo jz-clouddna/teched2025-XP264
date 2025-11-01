@@ -37,7 +37,7 @@ Furthermore, a dedicated load generator is to be run in a separate browser windo
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div> 
-<h1><a href=""><img class="aligncenter" src="..ex1/images/k8s-hpa-keda-load-generator.png" alt="" height="600"/></a></h1>
+<h1><a href=""><img class="aligncenter" src="../ex1/images/k8s-hpa-keda-load-generator.png" alt="" height="600"/></a></h1>
 </div>
 </td>
 </tr>
