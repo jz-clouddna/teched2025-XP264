@@ -698,7 +698,7 @@ sequenceDiagram
 - 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
 
 | Kyma BTP Region (Cockpit) |  Kyma dashboard | Data Collection Workflow (namespaced)
- | :---------  | --------- | :--------- | :------- | -----------
+ | :---------  | :--------- | :------- |
  | [uk-south](https://url.sap/0dd8pm) | [<img src="../landscape/uksouth/kyma-dashboard_url_uksouth.png" width="75" />](https://url.sap/x2ygbf) | [ k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
  | [japan-east](https://url.sap/u66itn) | [<img src="../landscape/japaneast/kyma_dashboard_url_japaneast.png" width="75" />](https://url.sap/0ysrs1 ) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
  | [us-east](https://url.sap/b24wtp) | [<img src="../landscape/useast/kyma_dashboard_url_useast.png" width="75" />](https://url.sap/ui217f) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
