@@ -32,6 +32,18 @@ Furthermore, a dedicated load generator is to be run in a separate browser windo
  | [ k8s-hpa-keda-load-generator](../../../../actions/workflows/k8s-hpa-keda-load-generator.yml)
 
 
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div> 
+<h1><a href=""><img class="aligncenter" src="..ex1/images/k8s-hpa-keda-load-generator.png" alt="" height="600"/></a></h1>
+</div>
+</td>
+</tr>
+</tbody>
+</table> 
+
 PS. The below steps are for illustration only. 
 
 - step1: initially deployed serveless python 3.12 function with a single replica....
