@@ -4,10 +4,9 @@
 
 Lets make some HTTP requests to the Httpbin application previously deployed in the Kyma runtime.
 
-- 👉 Open the Student Workflow (namespaced) from the table below. It will make 10 requests to the Httpbin application.
-- 👉 In order to simulate more load, edit the request count to for instance 100 (one hundred)
-
-- 👉 Once completed, navigate to SAP Cloud Logging to explore the three pillars of Kyma Telemetry: Logs, Metrics and Traces.
+- 👉 Open the Student Workflow (namespaced) from the table below. It will make 10 requests to the Httpbin application.  
+- 👉 In order to simulate more load, edit the request count to for instance 100 (one hundred)  
+- 👉 Once completed, navigate to SAP Cloud Logging to explore the three pillars of Kyma Telemetry: Logs, Metrics and Traces.  
 
 > [!TIP]
 > 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
