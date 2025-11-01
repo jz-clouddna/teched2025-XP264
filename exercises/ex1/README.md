@@ -428,7 +428,7 @@ The first method requires a kubectl oidc plugin (already pre-installed on the la
 
 You can initially download the kubeconfig from one of the links below or directly from any SAP Kyma dashboard.  
 
-* Here goes the table with the links to all btp and k8s resources...  
+* Fore convenience, here goes the table with the links to all btp and k8s resources...  
 
 > [!NOTE]
 > | Region (BTP Cockpit) | Kubeconfig (download) | Console (dashboard) | Admin Worklow (cluster-wide) | Student Workflow (namespaced) | Data Collection Workflow (cluster-wide)
@@ -540,7 +540,6 @@ Let's leverage the kyma cli to get simple metadata from a kyma cluster
 ```
 kyma alpha diagnose -f json | jq '.nodes[] | tojson'
 
-"{\"machineInfo\":{\"name\":\"shoot--kyma-stage--a416537-cpu-worker-0-z1-69d94-hd29q\",\"architecture\":\"amd64\",\"kernelVersion\":\"6.12.47-cloud-amd64\",\"osImage\":\"Garden Linux 1877.4\",\"containerRuntime\":\"containerd://2.1.4\",\"kubeletVersion\":\"v1.33.3\",\"operatingSystem\":\"linux\"},\"capacity\":{\"cpu\":\"4\",\"memory\":\"16384092Ki\",\"eph
 ```
 
 
@@ -552,6 +551,53 @@ Accessing other diagnostic information with btp and kubernetes terraform provide
 > The built-in terraform automation is designed to use the very kyma cluster as its remote backend to persist the terraform state.  
 > That's extremely convient as it allows to explore the gathered information at any time time and have it processed with other tools, etc...
 > It could be, for instance, shared with the SAP Kyma support.
+
+
+
+
+- 👉 Run the Data Collection Workflow
+
+
+
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+
+<div>
+
+```mermaid
+sequenceDiagram
+
+    Kyma Region (BTP Cockpit)-->>Data Collection Workflow (namespaced): cluster diagnostic ckeck
+    Note left of Kyma Region (BTP Cockpit): Pick a region<br/>and action<br/>of your choice.
+    Note left of Data Collection Workflow (namespaced): Choose a workflow<br/>and open it<br/>with the right click.
+
+
+```
+
+</div>
+
+<div>
+
+
+- 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
+
+| Kyma BTP Region (Cockpit) |  Kyma dashboard | Data Collection Workflow (namespaced)
+ | :---------  | :--------- | :------- |
+ | [uk-south](https://url.sap/0dd8pm) | [<img src="../landscape/uksouth/kyma-dashboard_url_uksouth.png" width="75" />](https://url.sap/x2ygbf) | [ k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
+ | [japan-east](https://url.sap/u66itn) | [<img src="../landscape/japaneast/kyma_dashboard_url_japaneast.png" width="75" />](https://url.sap/0ysrs1 ) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
+ | [us-east](https://url.sap/b24wtp) | [<img src="../landscape/useast/kyma_dashboard_url_useast.png" width="75" />](https://url.sap/ui217f) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
+ | [xp264-000](https://url.sap/v2dn5g) | [<img src="../landscape/xp264-000/kyma_dashboard_url_xp264_000.png" width="75" />](https://url.sap/9waari ) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
+ | [uk-xp264](https://url.sap/ovbfn6) | [<img src="../landscape/uk-xp264/kyma_dashboard_url_uk_xp264.png" width="75" />](https://url.sap/3wchu2 ) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
+
+
+</div>  
+</td>
+</tr>
+</tbody>
+</table>  
+
 
 
 - 👉 Let's capitalize on the student diagnostic github action that provides a service account based kubeconfig as an artifact, as follows:
@@ -573,7 +619,7 @@ Accessing other diagnostic information with btp and kubernetes terraform provide
 - 👉 run: `export KUBE_CONFIG_PATH=~/Downloads/kubeconfig_sa/my-kubeconfig_sa.yaml`
 - 👉 run: `terraform workspace list`
 
-```
+```rust
 │ Error: Backend initialization required, please run "terraform init"
 │ 
 │ Reason: Initial configuration of the requested backend "kubernetes"
@@ -596,7 +642,7 @@ Accessing other diagnostic information with btp and kubernetes terraform provide
 
 - 👉 run: `terraform init`
 
-```       
+```rust       
 Initializing the backend...
 
 Successfully configured the backend "kubernetes"! Terraform will automatically
@@ -660,7 +706,7 @@ commands will detect it and remind you to do so if necessary.
 
 - 👉 run: `terraform output -json  KymaModules | jq '.[] | { name: .name, version: .version}'`
 
-```
+```rust
 {
   "name": "serverless",
   "version": "1.8.3"
@@ -694,50 +740,6 @@ commands will detect it and remind you to do so if necessary.
   "version": "1.2.19"
 }
 ```
-
-- 👉 Run the Data Collection Workflow
-
-
-
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-
-<div>
-
-```mermaid
-sequenceDiagram
-
-    Kyma Region (BTP Cockpit)-->>Data Collection Workflow (namespaced): cluster diagnostic ckeck
-    Note left of Kyma Region (BTP Cockpit): Pick a region<br/>and action<br/>of your choice.
-    Note left of Data Collection Workflow (namespaced): Choose a workflow<br/>and open it<br/>with the right click.
-
-
-```
-
-</div>
-
-<div>
-
-
-- 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
-
-| Kyma BTP Region (Cockpit) |  Kyma dashboard | Data Collection Workflow (namespaced)
- | :---------  | :--------- | :------- |
- | [uk-south](https://url.sap/0dd8pm) | [<img src="../landscape/uksouth/kyma-dashboard_url_uksouth.png" width="75" />](https://url.sap/x2ygbf) | [ k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
- | [japan-east](https://url.sap/u66itn) | [<img src="../landscape/japaneast/kyma_dashboard_url_japaneast.png" width="75" />](https://url.sap/0ysrs1 ) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
- | [us-east](https://url.sap/b24wtp) | [<img src="../landscape/useast/kyma_dashboard_url_useast.png" width="75" />](https://url.sap/ui217f) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
- | [xp264-000](https://url.sap/v2dn5g) | [<img src="../landscape/xp264-000/kyma_dashboard_url_xp264_000.png" width="75" />](https://url.sap/9waari ) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
- | [uk-xp264](https://url.sap/ovbfn6) | [<img src="../landscape/uk-xp264/kyma_dashboard_url_uk_xp264.png" width="75" />](https://url.sap/3wchu2 ) | [k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
-
-
-</div>  
-</td>
-</tr>
-</tbody>
-</table>  
-
 
 ## Exercise 1.6 - Subscribe to a kyma multitenant application
 
