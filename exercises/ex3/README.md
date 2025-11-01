@@ -7,8 +7,8 @@ Lets make some HTTP requests to the Httpbin application previously deployed in t
 - Run the student workflow from the table below:
 
 
-< [!TIP]
-< 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
+> [!TIP]
+> 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
 
 | Kyma BTP Region (Cockpit) |  Kyma dashboard | Admin Worklow (cluster-wide) | Student Workflow (namespaced)| Data Collection Workflow (namespaced)
  | :---------  | --------- | :--------- | :------- | -----------
