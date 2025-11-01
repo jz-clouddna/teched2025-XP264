@@ -32,7 +32,7 @@ Once navigated in the Kyma Modules overview, click on Edit button.
 > [!NOTE]
 > By default, all modules come as **_Managed_**. This means that their operational health is backed by an operator and in case of any issue, respective Service Reliability Enginering team in SAP will be alerted and as result you get faster problem resolution.
 
-## Exercise 4.2 - Explore the modules related to technical connectivity.
+## Exercise 4.2 - Explore the modules related to technical connectivity
 
 Technical connectivity is generally categorized as:
 - _Inbound_ - External request or data is entering the application environment
@@ -46,11 +46,11 @@ To read more about each of the modules, you can refer to the respective document
 <br/><br/>
 - [**Transparent Proxy**](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/1700cfe070704d2e80aa76de1033a6c4.html) - _Outbound_. An integral part of [SAP BTP Connectivity capabilities](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/e54cc8fbbb571014beb5caaf6aa31280.html). Enables workloads to establish **_unified, virtually transparent_** technical connectivity to any remote system - hosted either in public or private networks. It works seamlessly with other modules like **Istio** and **Connectivity Proxy** module. The relevant target system-specific technical connectivity configurations are managed centrally as **_destinations_** in [Destination service](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/8ff5483fef564eae9f34fe092d1bddcd.html).
 
-## Exercise 4.3 - Explore Day 2 Relevant Operations
+## Exercise 4.3 - Explore Day-2 Relevant Operations
 
 ## Sizing
 
-By default, the modules are installed with the module specific and balanced sizing, i.e. performance vs resource allocation. In your Day 2 Operations, you may see the need to change the sizing to fit best your current needs:
+By default, the modules are installed with the module specific and balanced sizing, i.e. performance vs resource allocation. In your Day-2 Operations, you may see the need to change the sizing to fit best your current needs:
 
 - [Connectivity Proxy - Sizing Recommendations](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/204822a72a6646389d4016b985345bd6.html)
 - [Transparent Proxy - Sizing Recommendations](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/df31094259054c64a2c206166292d2fd.html)
@@ -81,7 +81,7 @@ In the cases the application workload is connecting to remote systems hosted on-
 
 ## Summary
 
-You've now got an overview of SAP BTP Connectivity capabilities offered on Kyma as Kyma Modules, namely [**Connectivity Proxy**](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/8dd1690aa475477ab44624626f45524b.html) and [**Transparent Proxy**](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/1700cfe070704d2e80aa76de1033a6c4.html). Enablement and usage of these modules is fast and simple, however, during Day 2, you mau need to react as fast as possible to adapt the system, for example, to an exceptional situation of abnormally high usage load to the system, or changed overall system requirement. The good news is that SAP has already prepared the modules for such cases.
+You've now got an overview of SAP BTP Connectivity capabilities offered on Kyma as Kyma Modules, namely [**Connectivity Proxy**](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/8dd1690aa475477ab44624626f45524b.html) and [**Transparent Proxy**](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/1700cfe070704d2e80aa76de1033a6c4.html). Enablement and usage of these modules is fast and simple, however, during Day-2, you mau need to react as fast as possible to adapt the system, for example, to an exceptional situation of abnormally high usage load to the system, or changed overall system requirement. The good news is that SAP has already prepared the modules for such cases.
 
 Continue to - [Exercise 5 - Configure Transparent Proxy Kyma Module ](../ex5/README.md)
 

@@ -150,8 +150,6 @@ https://url.sap/h4ioc0), in the Chrome browser on the **provided** teched laptop
   * [Exercise 2.2 - KEDA - Kubernetes Event-driven Autoscaler](exercises/ex2#exercise-22---keda)
   * [Exercise 2.3 - KEDA - Cron based scaler](exercises/ex2#exercise-23---kedas-cron-based-scaler)
 
-
-
 * #### [Exercise 3 - Explore Kyma Telemetry Features with SAP Cloud Logging](exercises/ex3#exercise-3---exploring-kyma-telemetry-with-sap-cloud-logging)
 
   * [Exercise 3.0 - Simulate some load](exercises/ex3#exercise-30---simulate-some-load)
@@ -160,27 +158,30 @@ https://url.sap/h4ioc0), in the Chrome browser on the **provided** teched laptop
   * [Exercise 3.3 - Explore Metrics](exercises/ex3#exercise-33---explore-metrics)
   * [Exercise 3.4 - Explore Traces](exercises/ex3#exercise-34---explore-traces)
 
+* #### [Exercise 4 - Explore SAP BTP Connectivity Capabilities in Kyma](exercises/ex4#exercise-4---explore-sap-btp-connectivity-capabilities-in-kyma)
+
+  * [Exercise 4.1 - Overview of the Kyma Modules](exercises/ex4#exercise-41---overview-of-the-kyma-modules)
+  * [Exercise 4.2 - Explore the modules related to technical connectivity](exercises/ex4#exercise-42---explore-the-modules-related-to-technical-connectivity)
+  * [Exercise 4.3 - Explore Day-2 Relevant Operations](exercises/ex4#exercise-43---explore-day-2-relevant-operations)
+
+* #### [Exercise 5 - Configure Transparent Proxy Kyma Module](exercises/ex5#exercise-5---configure-transparent-proxy-kyma-module)
+
+  * [Exercise 5.1 - Navigate to your working Namespace in Kyma Dashboard](exercises/exT2#exercise-t21-navigate-to-your-working-namespace-in-kyma-dashboard)
+  * [Exercise 5.2 - Create a dynamic Destination Custom Resource](exercises/exT2#exercise-t22-create-a-dynamic-destination-custom-resource)
+  * [Exercise 5.3 - Create a static Destination Custom Resource](exercises/exT2#exercise-t23-create-a-static-destination-custom-resource)
+  * [Exercise 5.4 - Explore the results of the creation of the Destination CRs via Kubectl](exercises/exT2#exercise-t24-explore-the-results-of-the-creation-of-the-destination-crs-via-kubectl)
+
+* #### [Exercise 6 - Use Transparent Proxy Kyma Module](exercises/ex6#exercise-6---use-transparent-proxy-kyma-module)
+
+  * [Exercise 6.1 - Run a cURL Pod Included in the Istio Service Mesh](exercises/exT3#exercise-t31-run-a-curl-pod-included-in-the-istio-service-mesh)
+  * [Exercise 6.2 -  Connect to remote systems defined as destinations using the dynamic "gateway" Destination CR](exercises/exT3#exercise-t32-connect-to-remote-systems-defined-as-destinations-using-the-dynamic-gateway-destination-cr)
+  * [Exercise 6.3 - Connect to a remote system defined as destination using the dedicated (static) "s4any" Destination CR](exercises/exT3#exercise-t33-connect-to-a-remote-system-defined-as-destination-using-the-dedicated-static-s4any-destination-cr)
 
 * #### [Exercise T1 - Enable Transparent Proxy Kyma Module (optional)](exercises/exT1#exercise-t1---enable-transparent-proxy-kyma-module)
 
   * [Exercise T1.1 - Navigate To The Kyma Dashboard](exercises/exT1#exercise-t11-navigate-to-the-kyma-dashboard)
   * [Exercise T1.2 - Enable Transparent Proxy Module](exercises/exT1#exercise-t12-enable-transparent-proxy-module)
   * [Exercise T1.3 - Explore What Changed In The Kyma Instance](exercises/exT1#exercise-t12-explore-what-changed-in-the-kyma-instance)
-
-
-* #### [Exercise T2 - Configure Transparent Proxy Kyma Module](exercises/exT2#exercise-t2---configure-transparent-proxy-kyma-module)
-
-  * [Exercise T2.1 - Navigate to your working Namespace in Kyma Dashboard](exercises/exT2#exercise-t21-navigate-to-your-working-namespace-in-kyma-dashboard)
-  * [Exercise T2.2 - Create a dynamic Destination Custom Resource](exercises/exT2#exercise-t22-create-a-dynamic-destination-custom-resource)
-  * [Exercise T2.3 - Create a static Destination Custom Resource](exercises/exT2#exercise-t23-create-a-static-destination-custom-resource)
-  * [Exercise T2.4 - Explore the results of the creation of the Destination CRs via Kubectl](exercises/exT2#exercise-t24-explore-the-results-of-the-creation-of-the-destination-crs-via-kubectl)
-
-* #### [Exercise T3 - Use Transparent Proxy Kyma Module](exercises/exT3#exercise-t3---use-transparent-proxy-kyma-module)
-
-  * [Exercise T3.1 - Run a cURL Pod Included in the Istio Service Mesh](exercises/exT3#exercise-t31-run-a-curl-pod-included-in-the-istio-service-mesh)
-  * [Exercise T3.2 -  Connect to remote systems defined as destinations using the dynamic "gateway" Destination CR](exercises/exT3#exercise-t32-connect-to-remote-systems-defined-as-destinations-using-the-dynamic-gateway-destination-cr)
-  * [Exercise T3.3 - Connect to a remote system defined as destination using the dedicated (static) "s4any" Destination CR](exercises/exT3#exercise-t33-connect-to-a-remote-system-defined-as-destination-using-the-dedicated-static-s4any-destination-cr)
-
 
 ----------------------------  
 
