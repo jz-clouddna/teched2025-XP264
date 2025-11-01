@@ -414,6 +414,30 @@ In a nutshell, Kyma CLI extends the capabilities of the ubiquitous kubectl CLI a
 > Use "kyma [command] --help" for more information about a command.
 > ~~~
 
+Practice:
+
+> [!NOTE]
+> - 👉 Let's leverage the kyma cli to get simple metadata from a kyma cluster...  
+> - 👉 run `kyma alpha diagnose -f json | jq '.metadata'`
+>
+> ~~~rust
+> {
+>  "globalAccountID": "4c526f8b-cca9-4837-8b43-87824e3a4d10",
+>  "subaccountID": "5524c764-8893-4530-8eb8-feb9e6110f16",
+> ............
+> }
+> ~~~
+
+> [!TIP]
+>  * Let's use the above information to build the deep link to the BTP subaccount with the kyma runtime environment.  
+>  * Use the link to inspect the BTP side of the kyma house....
+>  * Goto the [landscape dashboard](https://url.sap/3kf0ol) and choose the right environment...
+>  * Scramble the kyma runtime environment with the BTP Provisioning Service REST APIs
+
+```
+kyma alpha diagnose -f json | jq '.nodes[] | tojson'
+
+```
 
 - 👉 Please get familiar with the other *kyma cli* [commands](https://github.com/kyma-project/cli/tree/3.2.0/docs/user/gen-docs)... 
 
@@ -502,46 +526,6 @@ kyma alpha kubeconfig generate --serviceaccount kyma-cli-view-sa  --namespace de
 kyma alpha kubeconfig generate --serviceaccount xp264-000-sa  --namespace xp264-000 --permanent --clusterrole view --cluster-wide --kubeconfig ~/.kube/kubeconfig--garden-kyma--a896778-external.yaml
 ```  
 
-Let's leverage the kyma cli to get simple metadata from a kyma cluster
-
-👉 run `kyma alpha diagnose -f json | jq '.metadata'`
-```
-{
-  "globalAccountID": "4c526f8b-cca9-4837-8b43-87824e3a4d10",
-  "subaccountID": "5524c764-8893-4530-8eb8-feb9e6110f16",
-  "clusterID": "eef5b822-8f8f-4d08-af05-f26aafe252b8",
-  "clusterDomain": "a416537.stage.kyma.ondemand.com",
-  "region": "uksouth",
-  "shootName": "a416537",
-  "provider": "azure",
-  "kubernetesVersion": "1.33.3",
-  "natGatewayIPs": [
-    "172.167.242.76,",
-    "172.187.130.162,",
-    "172.187.211.228"
-  ],
-  "gardenerExtensions": [
-    "shoot-auditlog-service",
-    "shoot-cert-service",
-    "shoot-dns-service",
-    "shoot-lakom-service",
-    "shoot-networking-filter",
-    "shoot-networking-problemdetector",
-    "shoot-oidc-service"
-  ],
-  "kubeAPIServer": "https://api.a416537.stage.kyma.ondemand.com"
-}
-```
-
-  * Let's use the above information to build the deep link to the BTP subaccount with the kyma runtime environment.  
-  * Use the link to inspect the BTP side of the kyma house....
-  * Goto the [landscape dashboard](https://url.sap/3kf0ol) and choose the right environment...
-  * Scramble the kyma runtime environment with the BTP Provisioning Service REST APIs
-
-```
-kyma alpha diagnose -f json | jq '.nodes[] | tojson'
-
-```
 
 
 ## Exercise 1.5 - Terraforming kyma runtime environment
