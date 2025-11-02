@@ -531,6 +531,7 @@ Practice:
 > That's extremely convient as it allows to explore the gathered information at any time time and have it processed with other tools, etc...  
 > It could be, for instance, shared with the SAP Product support.
 
+<hr>
 
 <div>
 
