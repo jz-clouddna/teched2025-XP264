@@ -1,6 +1,6 @@
 # Exercise 1 - First things first. Day-2 with SAP BTP, Kyma Runtime
 
-Day 2 Operations refers to the ongoing operational activities required to maintain, monitor, and optimize systems after the initial deployment (Day 1 - Configuration and Deployment).   
+Day 2 Operations refers to the ongoing operational activities required to maintain, monitor, and optimize systems after the initial Day 1's configuration and deployment.
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
@@ -627,6 +627,35 @@ Then, in the terminal:
 <h1><a href="https://url.sap/3kf0ol"><img class="aligncenter" src="../landscape/images/d-com-multi-tenant-saas.png" alt=""/></a></h1>
 
 
+</div>
+</td>
+</tr>
+</tbody>
+</table>   
+
+
+Optional practice:  
+- 👉 In order to subscribe or to retrieve an existing subscription for your session user (xp264-0xx) run the following github action: 
+
+| Run Subscription workflow |
+| -------- | 
+[teched-xp264-mt](../../../../actions/workflows/teched-xp264-mt.yml) 
+
+
+
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div>
+<h1><a href="../../../../actions/workflows/teched-xp264-mt.yml">
+<p float="left">
+  <img src="../ex1/images/subscription-job.png" width="450" height="600"/>
+  <img src="../ex1/images/subscription-manifest.png" width="450" height="600"/>
+  <img src="../ex1/images/subscription-url.png" /> 
+</p>
+
+
 ```mermaid
 ---
 title: Subscription Flow Chart
@@ -659,7 +688,26 @@ sequenceDiagram
     Note over T,DB: Tenant can now access the application
 ```
 
-<hr>
+
+</a></h1>
+</div>
+</td>
+</tr>
+</tbody>
+</table> 
+
+
+<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
+<tbody>
+<tr style="height: 193px;">
+<td style="width: 71.6%; height: 193px;">
+<div>
+<h1><a href="../../../../actions/workflows/teched-xp264-mt.yml">
+<p float="left">
+  <img src="../ex1/images/subscribed-app.png" height="800"/> 
+</p>
+
+
 
 ```mermaid
 ---
@@ -700,50 +748,7 @@ graph TB
 
 ```
 
-</div>
-</td>
-</tr>
-</tbody>
-</table>   
 
-
-Optional practice:  
-- 👉 In order to subscribe or to retrieve an existing subscription for your session user (xp264-0xx) run the following github action: 
-
-| Run Subscription workflow |
-| -------- | 
-[teched-xp264-mt](../../../../actions/workflows/teched-xp264-mt.yml) 
-
-
-
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-<div>
-<h1><a href="../../../../actions/workflows/teched-xp264-mt.yml">
-<p float="left">
-  <img src="../ex1/images/subscription-job.png" width="450" height="600"/>
-  <img src="../ex1/images/subscription-manifest.png" width="450" height="600"/>
-  <img src="../ex1/images/subscription-url.png" /> 
-</p>
-</a></h1>
-</div>
-</td>
-</tr>
-</tbody>
-</table> 
-
-
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-<div>
-<h1><a href="../../../../actions/workflows/teched-xp264-mt.yml">
-<p float="left">
-  <img src="../ex1/images/subscribed-app.png" height="800"/> 
-</p>
 </a></h1>
 </div>
 </td>
