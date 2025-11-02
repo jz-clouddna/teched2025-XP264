@@ -196,7 +196,7 @@ https://url.sap/h4ioc0), in the Chrome browser on the **provided** teched laptop
   * [Exercise 7.3 - Explore What Changed In The Kyma Instance](exercises/ex7#exercise-72-explore-what-changed-in-the-kyma-instance)
 
 
-## Feedback
+## Session Feedback. Thank you!
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -209,6 +209,7 @@ https://url.sap/h4ioc0), in the Chrome browser on the **provided** teched laptop
 </tr>
 </tbody>
 </table>  
+
 ----------------------------  
 
 ## Additional resources
