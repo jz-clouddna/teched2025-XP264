@@ -789,7 +789,7 @@ Optional practice:
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-<h1><a href="">
+<h1><a href="https://url.sap/7voc6j">
 <p float="left">
   <img src="../ex1/images/subscription-mgmt.png" width="450" />
   <img src="../ex1/images/subscription-mgmt-tenant-details.png" width="450" />
