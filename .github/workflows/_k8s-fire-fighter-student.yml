@@ -305,7 +305,7 @@ env:
 
         echo -e "\nPermanent and namespaced full admin access\n"
         kyma alpha kubeconfig generate --serviceaccount $NAMESPACE-sa --clusterrole cluster-admin --namespace $NAMESPACE --permanent
-        echo -e "\Time-boxed and namespaced full admin access\n"
+        echo -e "\nTime-boxed and namespaced full admin access\n"
         kyma alpha kubeconfig generate --serviceaccount $NAMESPACE-sa --clusterrole cluster-admin --namespace $NAMESPACE --time 1h  
 
         echo -e "*********** Time-boxed, cluster-wide access ********************\n"
@@ -342,7 +342,7 @@ env:
       uses: actions/upload-artifact@v4
       with:
         name: timeboxed_kubeconfigs
-        path: ./*.yaml
+        path: ./$NAMESPACE-sa*.yaml
 
 
     - "name": "btp runtime context access."
