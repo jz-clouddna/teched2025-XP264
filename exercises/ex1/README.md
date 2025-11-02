@@ -234,7 +234,7 @@ flowchart TD
 </tbody>
 </table> 
 
-Time to do it yourself...  
+Practice:   
 - 👉 Pick a region and action of your choice...
 - 👉 Trigger the workflow...(hint: you may run them all at once in parallel)
 - 👉 Inspect the steps of each workflow...
@@ -424,6 +424,7 @@ Practice:
 > ............
 > }
 > ~~~
+> Practice:
 > - 👉 run and explore `kyma alpha diagnose -f json | jq '.nodes[] | tojson'`
 
 > [!TIP]
@@ -473,7 +474,7 @@ Practice:
 
 | Run Firefighter student workflow |
 | -------- | 
-[teched-xp264-mt](../../../../actions/workflows/k8s-fire-fighter-student.yml) 
+[k8s-fire-fighter-student](../../../../actions/workflows/k8s-fire-fighter-student.yml) 
 
 
 
@@ -491,7 +492,7 @@ Accessing other diagnostic information with btp and kubernetes terraform provide
 
 
 
-
+Practice:  
 - 👉 Run the Data Collection Workflow
 
 
@@ -517,7 +518,7 @@ sequenceDiagram
 
 <div>
 
-
+Practice:  
 - 👉 For the best experience, open workflow links into a separate tab or into a new window (right click).  
 
  |  Data Collection Workflow (namespaced)
