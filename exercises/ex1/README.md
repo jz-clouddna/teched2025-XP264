@@ -489,7 +489,8 @@ Practice:
 </tbody>
 </table> 
 
-👉 Download the artifacts and upload them into an empty [kyma dashboard](https://dashboard.kyma.cloud.sap/clusters)
+👉 Download the artifacts and upload them into an empty [kyma dashboard](https://dashboard.kyma.cloud.sap/clusters)  
+👉 Take a note of the kyma cluster region and your namespace  
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -508,23 +509,6 @@ Practice:
 
 ## Exercise 1.5 - Terraforming kyma runtime environment
 
-Accessing other diagnostic information with btp and kubernetes terraform providers.
-
-> [!NOTE]
-> The built-in terraform automation is designed to use the very kyma cluster as its remote backend to persist the terraform state.  
-> That's extremely convient as it allows to explore the gathered information at any time time and have it processed with other tools, etc...
-> It could be, for instance, shared with the SAP Kyma support.
-
-
-
-Practice:  
-- 👉 Run the Data Collection Workflow
-
-
- |  Data Collection Workflow (namespaced)
- | :---------  |
- | [ k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
-
 
 <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
 <tbody>
@@ -533,7 +517,7 @@ Practice:
 
 <div>
 
-Data Collection Workflow (namespaced) sequence diagram...
+<h3>Accessing other diagnostic information with btp and kubernetes terraform providers....</h3>
 
 ```mermaid
 sequenceDiagram
@@ -542,10 +526,14 @@ sequenceDiagram
     Note left of Kyma Region (BTP Cockpit): Pick a region<br/>and action<br/>of your choice.
     Note left of Data Collection Workflow (namespaced): Choose a workflow<br/>and open it<br/>with the right click.
 
-
 ```
 
 </div>
+
+> [!NOTE]
+> The built-in terraform automation is designed to use the very kyma cluster as its remote backend to persist the terraform state.  
+> That's extremely convient as it allows to explore the gathered information at any time time and have it processed with other tools, etc...
+> It could be, for instance, shared with the SAP Kyma support.
 
 
 </td>
@@ -553,24 +541,18 @@ sequenceDiagram
 </tbody>
 </table>  
 
-Optional practice (requires VSCode):  
-- 👉 Let's capitalize on the student diagnostic github action that provides a service account based kubeconfig as an artifact, as follows:
 
+Optional practice (requires VSCode terminal):  
+- 👉 reuse a downloaded time-boxed service account based kubeconfig from the previous exercise
+- 👉 rerun the namespaced Data Collection Workflow against the same kyma cluster region and your namespace
 
-<table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;" border="1">
-<tbody>
-<tr style="height: 193px;">
-<td style="width: 71.6%; height: 193px;">
-<div>
-<h1><a href="../../../../actions/workflows/k8s-data-context-student.yml"><img class="aligncenter" src="images/k8s-data-context-artifacts.png" alt="" height="600"/></a></h1>
+ |  Data Collection Workflow (namespaced)
+ | :---------  |
+ | [ k8s-data-context-student](../../../../actions/workflows/k8s-data-context-student.yml)
 
-</div>  
-</td>
-</tr>
-</tbody>
-</table> 
-
-- 👉 run: `export KUBE_CONFIG_PATH=~/Downloads/kubeconfig_sa/my-kubeconfig_sa.yaml`
+- 👉 open: VSCode terminal window
+Then, in the terminal:  
+- 👉 run: `export KUBE_CONFIG_PATH=~/Downloads/timeboxed_kubeconfigs/xp264-050-sa.yaml`
 - 👉 run: `terraform init`
 
 > ~~~rust       
