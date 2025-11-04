@@ -154,15 +154,15 @@ https://url.sap/h4ioc0), in the Chrome browser on the **provided** teched laptop
   * [Exercise 1.2 - Built-in github automation flows](exercises/ex1#exercise-12---built-in-github-actions-automation-flows)
   * [Exercise 1.3 - Zoom on Kyma CLI (optional)](exercises/ex1#exercise-13---zoom-on-kyma-cli-optional)
   * [Exercise 1.4 - Firefighter access](exercises/ex1#exercise-14---fire-fighter-access-to-your-kyma-cluster)
-  * [Exercise 1.5 - Terraforming kyma runtime environment](exercises/ex1#exercise-15---terraforming-kyma-runtime-environment)
-  * [Exercise 1.6 - Multitenancy playground](exercises/ex1#exercise-16---subscribe-to-a-kyma-multitenant-application)
+  * [Exercise 1.5 - Terraforming kyma runtime environment (optional)](exercises/ex1#exercise-15---terraforming-kyma-runtime-environment)
+  * [Exercise 1.6 - Multitenancy playground (optional)](exercises/ex1#exercise-16---subscribe-to-a-kyma-multitenant-application)
 
 
 * #### [Exercise 2 - Using External Scalers. Keda - the Kubernetes Event-driven Autoscaler.](exercises/ex2#exercise-2---use-external-scalers-keda---the-kubernetes-event-driven-autoscaler)
   * [Exercise 2.0 - Introduction to kubernetes autoscalers](exercises/ex2#exercise-20---introduction-to-kubernetes-autoscalers)
   * [Exercise 2.1 - HPA - Horizontal Pod Autoscaler](exercises/ex2#exercise-21---hpa)
   * [Exercise 2.2 - KEDA - Kubernetes Event-driven Autoscaler](exercises/ex2#exercise-22---keda)
-  * [Exercise 2.3 - KEDA - Cron based scaler](exercises/ex2#exercise-23---kedas-cron-based-scaler)
+  * [Exercise 2.3 - KEDA - Cron based scaler (optional)](exercises/ex2#exercise-23---kedas-cron-based-scaler)
 
 * #### [Exercise 3 - Explore Kyma Telemetry Features with SAP Cloud Logging](exercises/ex3#exercise-3---exploring-kyma-telemetry-with-sap-cloud-logging)
 
