@@ -90,7 +90,7 @@ The students can pick and choose any available kyma cluster region the following
 | xp264-050  (eu20/azure)              |  UK SOUTH region | kyma environment with the cluster in the uk south region        |
 
 
-> [!NOTE]
+> [!IMPORTANT]
 > - Each cluster has been configured to the same template with dedicated namespaces for each student.
 > - As this is an academic exercise, the complete user/namespace isolation has not been enforced.
 > 
