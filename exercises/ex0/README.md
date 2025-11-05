@@ -79,7 +79,7 @@ Access to the solution landscape is provided via the Easy Navigation dashboard.
 
 - :notebook: FYI: The students can pick and choose any available kyma cluster region the following list:
 
-| BTP region              | Kyma region        |                                                                                                                                Description |
+<!-- | BTP region              | Kyma region        |                                                                                                                                Description |
 | :------------------------ | :---------: | :------------------------------------------------------------------------------------------------------------------------ |
 | japan-east (eu20/azure)               |  JAPAN EAST region | kyma environment with the cluster in the japan east region         |
 | uk-south (eu20/azure)                 |  UK SOUTH region | kyma environment with the cluster in the uk south region         |
@@ -90,7 +90,7 @@ Access to the solution landscape is provided via the Easy Navigation dashboard.
 | xp264-001  (eu10/aws)                |  EU Central region | kyma environment with the cluster in the eu central region         |
 | us-east (eu20/azure)              |  US EAST region  | kyma environment with the cluster in the us east region         |
 
-
+ -->
 > [!IMPORTANT]
 > - Each cluster has been configured to the same template with dedicated namespaces for each student.
 > - As this is an academic exercise, the complete user/namespace isolation has not been enforced.
@@ -113,8 +113,21 @@ You may login to [SAP-TechEd25-XP264 Business Technology Platform - Cockpit](htt
 <tr style="height: 193px;">
 <td style="width: 71.6%; height: 193px;">
 <div>
-<h1><a href="https://url.sap/yogrmc"><img class="aligncenter" src="../ex0/images/SAP-TechEd25-XP264.png" alt="SAP-TechEd25-XP264" /></a>
-</h1>
+<!-- <h1><a href="https://url.sap/yogrmc"><img class="aligncenter" src="../ex0/images/SAP-TechEd25-XP264.png" alt="SAP-TechEd25-XP264" /></a>
+</h1> -->
+
+
+| BTP region              | Kyma region        |                                                                                                                                Description |
+| :------------------------ | :---------: | :------------------------------------------------------------------------------------------------------------------------ |
+| japan-east (eu20/azure)               |  JAPAN EAST region | kyma environment with the cluster in the japan east region         |
+| uk-south (eu20/azure)                 |  UK SOUTH region | kyma environment with the cluster in the uk south region         |
+| xp264-000  (eu20/azure)             |  UK SOUTH region  | kyma environment with the cluster in the uk south region         |
+| xp264-045  (eu20/azure)                |  UK SOUTH region | kyma environment with the cluster in the uk south region         |
+| xp264-050  (eu20/azure)              |  UK SOUTH region | kyma environment with the cluster in the uk south region        |
+| xp264-050  (eu20/azure)              |  UK SOUTH region | kyma environment with the cluster in the uk south region        |
+| xp264-001  (eu10/aws)                |  EU Central region | kyma environment with the cluster in the eu central region         |
+| us-east (eu20/azure)              |  US EAST region  | kyma environment with the cluster in the us east region         |
+
 
 
 ```mermaid
